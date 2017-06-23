@@ -1,8 +1,8 @@
 .navbar-default {
-  border: none;
+    border: none;
 }
 
 header {
-  background: url('../images/headerimage.jpg') center center no-repeat;
-  height: 600px;
+    background: url('../images/loading.jpg') center center no-repeat;
+    height: 600px;
 }
