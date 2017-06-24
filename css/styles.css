@@ -1,5 +1,37 @@
 .navbar-default {
-    border: none;
+    border: center;
+}
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 9px;
+}
+
+.navbar-brand-logo>img {
+    display: block;
+    float: left;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.navbar-brand {
+    float: left;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-top: px;
+    font-size: 20px;
+    line-height: 42px;
 }
 
 header {
@@ -20,7 +52,7 @@ body {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-top: 50px;
 }
 
@@ -47,12 +79,10 @@ body {
 }
 
 #main {
-    transition: margin-left .5s;
+    transition: margin-right .1s;
     padding: 2px;
 }
 
-
-/*
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -61,8 +91,6 @@ body {
         font-size: 18px;
     }
 }
-
-*/
 
 
 /* ----------- iPhone 4 and 4S ----------- */
