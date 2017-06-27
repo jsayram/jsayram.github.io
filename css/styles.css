@@ -2,45 +2,50 @@
     border: center;
 }
 
+.navbar-header {
+    margin-top: 15px;
+}
+
 .container-fluid>.navbar-collapse,
 .container-fluid>.navbar-header,
 .container>.navbar-collapse,
 .container>.navbar-header {
     margin-right: -15px;
     margin-left: -15px;
-    margin-top: 9px;
 }
 
 .navbar-brand-logo>img {
     display: block;
     float: left;
     height: auto;
-    padding-left: 0px;
-    padding-right: 10px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    font-size: 20px;
-    line-height: 10px;
+    margin-right: 10px;
 }
 
 .navbar-brand {
+    /*    margin-left: 10px;*/
+    margin-top: 15px;
     float: left;
-    height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 0px;
-    padding-top: px;
+    /* height: auto;
+*/
     font-size: 20px;
-    line-height: 42px;
+    /*    line-height: 42px;*/
 }
 
 header {
-    background: url('../images/loading.jpg') center center no-repeat;
+    background-repeat: no-repeat;
+    background-position: middle center;
+    background-attachment: fixed;
+    width: 100%;
+    background: #101010 url('../images/suit.jpg') 50% 50% no-repeat;
     height: 600px;
 }
 
 body {
     font-family: "Lato", sans-serif;
+}
+
+#services {
+    background: #fffffa;
 }
 
 .sidenav {
@@ -54,10 +59,11 @@ body {
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 50px;
+    float: right;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 20px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -76,6 +82,16 @@ body {
     right: 20px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.navbar-inverse .navbar-nav {
+    color: #9d9d9d;
+    margin-right: 20px;
+    margin-top: 15px
+}
+
+.navbar-left {
+    width: 7em;
 }
 
 #main {
@@ -103,7 +119,11 @@ body {
 
 /* Portrait */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+@media only screen and (min-device-width: 100px) and (max-device-width: 321px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .navbar-brand {
+        display: none;
+    }
+}
 
 
 /* Landscape */

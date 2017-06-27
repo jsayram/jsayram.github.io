@@ -10,105 +10,108 @@
     <title>Jose Ramirez</title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-inverse" role="navigation">
-            <div class="container-fluid">
-                <div id="main" class="navbar-left">
-                    <a class="navbar-brand-logo " href="#"><img style="max-width:80px; " src="images/jrvlogo.png"></a>
 
-                </div>
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
 
-                <a class="navbar-brand" id="name" href="#" id="name">Jose Ramirez-Villa</a>
+            <!-- Add all page content inside this div if you want the side nav to push page content to the right
+                    (not used if you only want the sidenav to sit on top of the page -->
+            <!-- logo JRV -->
+            <div id="main" class="navbar-left">
+                <a id="logo" class="navbar-brand-logo " href="#"><img style="max-width:80px; " src="images/jrvlogo.png"></a>
+            </div>
 
-
-                <div class="navbar-header pull-right">
-                    <!-- button will show when the navbar collapses to a specified size ie: mobilephone screen-->
-                    <button type="button" class="navbar-toggle" data-toggle="tab" data-target="#mySidenav" data-target="#logo" onclick="openNav()">
+            <!--Name shown at the top of the website Jose Ramirez-Villa-->
+            <a class="navbar-brand" id="name" href="#" id="name">Jose Ramirez-Villa</a>
+            <!--this is constains the button that will toggle the side navigation bar-->
+            <div id="buttonNav" class="navbar-header pull-right">
+                <!-- button will show when the navbar collapses to a specified size ie: mobilephone screen-->
+                <button type="button" class="navbar-toggle" data-toggle="tab" data-target="#mySidenav" data-target="#logo" onclick="openNav()">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                </div>
-
-                <!-- Add all page content inside this div if you want the side nav to push page content to the right
-(not used if you only want the sidenav to sit on top of the page -->
-
-
-
-                <!-- this will open when collpased button shows on the main menu -->
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <ul class="list-unstyled">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#staff">Staff</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                    </ul>
-                </div>
-                <!-- main navigation items that will collapse when screen gets small -->
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#staff">Staff</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                    </ul>
-                </div>
             </div>
-            <!-- container -->
-        </nav>
-    </header>
-    <!--END OF HEADER-->
 
-    <div class="container">
+            <!-- this will open when collpased button shows on the main menu -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="list-unstyled">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!--                    <li><a href="#staff">Staff</a></li>-->
+                    <!--                    <li><a href="#testimonials">Testimonials</a></li>--></li>
+
+                </ul>
+            </div>
+            <!-- main navigation items that will collapse when screen gets small -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#abou">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!--                    <li><a href="#staff">Staff</a></li>-->
+                    <!--                    <li><a href="#testimonials">Testimonials</a></li>--></li>
+                </ul>
+            </div>
+        </div>
+        <!-- container -->
+    </nav>
+
+
+</header>
+<!--END OF HEADER-->
+
+<body>
+
+    <div class="container-fluid">
         <div class="row" id="about">
-            <section class="page col-sm-12 text-center">
+            <section class="page col-lg-12 text-center">
                 <h2 id="aboutHeader">About</h2>
 
-                <p>I get things&nbsp;done.</p>
+                <p class="aboutText">I get things&nbsp;done.</p>
 
-                <!--                <p>Bacon ipsum dolor amet fatback landjaeger porchetta, bresaola filet mignon rump andouille doner ham hock short ribs t-bone biltong. Cupim ribeye prosciutto pork, cow turducken flank. Shank corned beef short loin shankle, strip steak tri-tip meatball venison t-bone biltong. Cow corned beef ham, venison boudin cupim tail. healthy&nbsp;life.</p>-->
+                <p class="aboutText">Bacon ipsum dolor amet fatback landjaeger porchetta, bresaola filet mignon rump andouille doner ham hock short ribs t-bone biltong. Cupim ribeye prosciutto pork, cow turducken flank. Shank corned beef short loin shankle, strip steak tri-tip meatball venison t-bone biltong. Cow corned beef ham, venison boudin cupim tail. healthy&nbsp;life.</p>
             </section>
         </div>
 
-        <!--
-        <div class="row" id="services">
-            <section class="page col-sm-12">
-                <h2>Services</h2>
+
+        <div class="row" id="skills">
+            <section class="page col-sm-12 text-center">
+                <h2>Skills</h2>
                 <div class="row">
-                    <section class="col-sm-6">
-                        <h3>Exotic Pets</h3>
-                        <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets.</p>
+                    <section class="col-xs-6">
+                        <h3>Software</h3>
+                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </section>
-                    <section class="col-sm-6">
-                        <h3>Grooming</h3>
-                        <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
+                    <section class="col-xs-6">
+                        <h3>Web</h3>
+                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </section>
                 </div>
                 <div class="row">
-                    <section class="col-sm-6">
-                        <h3>General Health</h3>
-                        <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services.</p>
+                    <section class="col-xs-6 col-lg-6">
+                        <h3>Film</h3>
+                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </section>
-                    <section class="col-sm-6">
-                        <h3>Nutrition</h3>
-                        <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention.</p>
+                    <section class="col-xs-6 col-lg-6">
+                        <h3>Coding</h3>
+                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </section>
                 </div>
                 <div class="row">
-                    <section class="col-sm-6">
-                        <h3>Pest Control</h3>
-                        <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites.</p>
+                    <section class="col-xs-6 col-lg-6">
+                        <h3>Engineering</h3>
+                        <p> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </section>
-                    <section class="col-sm-6">
-                        <h3>Vaccinations</h3>
-                        <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets.</p>
+                    <section class="col-xs-6 col-lg-6">
+                        <h3>Electrical</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e</p>
                     </section>
                 </div>
             </section>
         </div>
--->
+
 
         <!--
 <div class="row">
