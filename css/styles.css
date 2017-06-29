@@ -22,7 +22,7 @@ Hide NavBar up in scrolling up*/
 /*    height: auto;*/
 /*    margin-right: 10px;*/
     padding-top: 15px;
-    width:50px
+    width:50px;
 }
 
 .navbar-brand {
@@ -94,7 +94,7 @@ header {
     overflow-x: hidden;
     position: relative;
     background: url(../images/computer_lg.png);
-    /*    background-size: 100% 150%;*/
+        background-size: auto;
 }
 
 
@@ -143,6 +143,7 @@ body {
 /*Side Navigation*/
 
 .sidenav {
+    margin-top:0%;
     height: 100%;
     width: 0;
     position: fixed;
@@ -153,11 +154,11 @@ body {
     overflow-x: hidden;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    padding-top: 50px;
+    padding-top: 90px;
 }
 
 .sidenav .list-unstyled {
-    margin-top: 100px;
+/*    margin-top: 100px;*/
     float: right;
 }
 
@@ -176,6 +177,7 @@ body {
 .sidenav a:hover,
 .offcanvas a:focus {
     color: #f1f1f1;
+    cursor: pointer;
 }
 
 .sidenav .closebtn {
@@ -376,7 +378,7 @@ body {
         overflow-x: hidden;
         position: static;
         background: url(../images/computer-sm.png) no-repeat;
-        /*        background-size: 100% 100%;*/
+                background-size: auto,auto;
     }
 }
 
@@ -395,7 +397,7 @@ body {
         overflow-x: hidden;
         position: static;
         background: url(../images/computer-med.png);
-        /*        background-size: 150% 100%;*/
+                background-size: auto, auto;
     }
 }
 
