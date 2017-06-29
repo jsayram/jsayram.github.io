@@ -33,30 +33,61 @@ Hide NavBar up in scrolling up*/
 
 }
 
-.navbar-brand:hover {
-    color: yellow;
-}
 
 .navbar-brand span {
     color: #702632;
     font: normal 1px 'Cookie', cursive;
-    font-size:30px;
+    font-size: 35px;
+    font-family:"fira-sans-2",sans-serif;
+    font-weight:900;
+}
+.navbar-brand span:hover {
+    color: #fffffa;
+    font: normal 1px 'Cookie', cursive;
+    font-size:35px;
+    font-family:"fira-sans-2",sans-serif;
+    font-weight:900;
+
 }
 
 .navbar-nav {
     margin-top: 5px;
-    margin-right: 5px;
 }
 
 #myNavbar a {
-    font: normal 20px 'Cookie', normal;
+/*    font: normal 20px 'Cookie', normal;*/
     color: #fffffa;
+    font-size: 15px;
+    font-family:"etica-display",sans-serif;
+    margin-top:11px;
+    font-weight:200;
 }
 
 #myNavbar a:hover {
-    color: yellow;
+    color: #702632;
     background: transparent;
+    font-size:20px;
+
 }
+
+a#envelopeL  {
+    /*    font: normal 20px 'Cookie', normal;*/
+    color: #fffffa;
+    font-size: 40px;
+    font-family:"etica-display",sans-serif;
+    margin-top:1px;
+    font-weight:200;
+}
+a#envelopeL:hover  {
+    /*    font: normal 20px 'Cookie', normal;*/
+    color: #702632;
+    font-size: 40px;
+    font-family:"etica-display",sans-serif;
+    margin-top:1px;
+    font-weight:200;
+}
+
+
 
 .sidebar-nav :active,
 .sidebar-nav :focus {
@@ -78,6 +109,7 @@ Hide NavBar up in scrolling up*/
 
 button span {
     background-color: #fffffa;
+    margin-top:10px;
 }
 
 .overlay {
@@ -108,7 +140,7 @@ body {
 }
 
 
-/*Pallete*/
+/*pallete*/
 
 {
     color: #40434e;
@@ -121,12 +153,17 @@ body {
     background-color: #fffffa;
     color: #080705;
     font-size: 12px;
+    font-family:"etica-display",sans-serif;
+    font-weight:200;
+    font-style:normal;
 }
 
 #skills {
     background-color: #40434e;
     color: #fffffa;
     font-size: 12px;
+    font-family:"etica-display",sans-serif;
+    font-weight:200;
 }
 
 #staff {
@@ -160,6 +197,10 @@ body {
 .sidenav .list-unstyled {
 /*    margin-top: 100px;*/
     float: right;
+    font-size: 12px;
+    font-family:"etica-display",sans-serif;
+    font-weight:200;
+
 }
 
 .sidenav a {
@@ -170,7 +211,10 @@ body {
     display: block;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    font: normal 30px 'Cookie', normal;
+/*    float:right;*/
+/*    font: normal 30px 'Cookie', normal;*/
+    font-family:"etica-display",sans-serif;
+    font-weight:200;
     line-height: inherit;
 }
 
@@ -243,6 +287,8 @@ body {
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
+    font-family:"etica-display",sans-serif;
+    font-weight:200;
 }
 
 .footer-distributed .footer-company-name {
@@ -273,7 +319,6 @@ body {
     margin-right: 3px;
     margin-bottom: 5px;
 }
-
 
 /* Footer contact form */
 
@@ -351,7 +396,19 @@ body {
     float: center;
     width: auto;
 }
+#belowFooter{
+    width:100%;
+    height:100%;
+    color:#fffffa;
+    text-align: center;
+    background-color:black;
+    padding-top:10px;
+    line-height: normal;
+    font-family:"fira-sans-2",sans-serif;
+    font-weight:200;
+    font-size:10px;
 
+}
 
 /*End of Footer CSS*/
 
@@ -406,7 +463,9 @@ body {
 
 @media (max-width: 1000px) {
     .footer-distributed {
-        font: bold 14px sans-serif;
+        font-size: 12px;
+        font-family:"etica-display",sans-serif;
+        font-weight:200;
         height: auto;
     }
     .footer-distributed .footer-company-name {
