@@ -1,17 +1,19 @@
-.navbar-default {
-    border: center;
+/*----------Header---------------*/
+
+
+/*used for javaScript to
+Hide NavBar up in scrolling up*/
+
+.nav-up {
+    top: -70px;
 }
 
 .navbar-header {
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
-.container-fluid>.navbar-collapse,
-.container-fluid>.navbar-header,
-.container>.navbar-collapse,
-.container>.navbar-header {
-    margin-right: -15px;
-    margin-left: -15px;
+.navbar-left {
+    width: 7em;
 }
 
 .navbar-brand-logo>img {
@@ -19,41 +21,115 @@
     float: left;
     height: auto;
     margin-right: 10px;
+    padding-top: 0px;
 }
 
 .navbar-brand {
-    /*    margin-left: 10px;*/
-    margin-top: 15px;
+    color: #fffffa;
     float: left;
-    /* height: auto;
-    */
-    font-size: 20px;
-    font-family: fantasy;
-    /*    line-height: 42px;*/
+    font: normal 20px 'Cookie', cursive;
+}
+
+.navbar-brand:hover {
+    color: yellow;
+}
+
+.navbar-brand span {
+    color: #702632;
+    font: normal 20px 'Cookie', cursive;
+}
+
+.navbar-nav {
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 #myNavbar a {
-    font-family: cursive;
-    font-size: 20px
+    font: normal 20px 'Cookie', normal;
+    color: #fffffa;
+}
+
+#myNavbar a:hover {
+    color: yellow;
+    background: transparent;
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, .7);
+    height: 60px;
+    position: fixed;
+    transition: top 0.3s ease-in-out;
+    width: 100%;
+}
+
+button span {
+    background-color: #fffffa;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .6);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
 }
 
 header {
-    background-repeat: no-repeat;
-    background-position: middle center;
-    background-attachment: fixed;
     width: 100%;
-    background: #101010 url('../images/suit.jpg') 50% 50% no-repeat;
-    height: 600px;
+    height: 450px;
+    background: #101010;
+    overflow-x: hidden;
+    position: relative;
+    background: url(../images/computer_lg.png);
+    /*    background-size: 100% 150%;*/
 }
+
+
+/*---------------BODY-------------*/
 
 body {
     font-family: "Lato", sans-serif;
-    margin-top: 70px;
+    /*    margin-top: 70px;*/
+    background-color: #111;
+    color: aliceblue;
 }
 
-#services {
-    background: #fffffa;
+
+/*Pallete*/
+
+{
+    color: #40434e;
+    color: #702632;
+    color: #912f40;
+    color: #fffffa;
 }
+
+#about {
+    background-color: #fffffa;
+    color: #080705;
+}
+
+#skills {
+    background-color: #40434e;
+    color: #080705;
+}
+
+#staff {
+    background-color: #702632;
+    color: #080705;
+}
+
+#testimonials {
+    background-color: #40434e;
+    color: #080705;
+}
+
+
+/*Side Navigation*/
 
 .sidenav {
     height: 100%;
@@ -62,12 +138,11 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgba(0, 0, 0, .7);
     overflow-x: hidden;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-top: 50px;
-    float: right;
 }
 
 .sidenav .list-unstyled {
@@ -82,7 +157,7 @@ body {
     display: block;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    font-family: cursive;
+    font: normal 30px 'Cookie', cursive;
 }
 
 .sidenav a:hover,
@@ -93,27 +168,179 @@ body {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 20px;
-    font-size: 40px;
-    margin-left: 50px;
-    font-family: none;
+    right: 10px;
+    font-size: 30px;
+    font: normal 40px 'Cookie', cursive;
 }
 
-.navbar-inverse .navbar-nav {
-    color: #9d9d9d;
-    margin-right: 20px;
-    margin-top: 15px
+
+/*************End of Body CSS*********/
+
+
+/*---------FOOTER-----------------*/
+
+.footer-distributed {
+    background-color: #080705;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: left;
+    padding: 50px 60px 40px;
+    /*    margin-top: 80px;*/
+    overflow: hidden;
+    height: auto;
 }
 
-.navbar-left {
-    width: 7em;
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    float: left;
+    padding-left: 15px;
 }
 
-#main {
-    -webkit-transition: margin-right .1s;
-    transition: margin-right .1s;
-    padding: 2px;
+
+/* My name Big (company logo) */
+
+.footer-distributed h3 {
+    color: #fffffa;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0 0 10px;
 }
+
+.footer-distributed h3 span {
+    color: #702632;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons {
+    margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+/* Footer contact form */
+
+.footer-distributed .footer-right {
+    float: right;
+    padding-left: 15px;
+    /*        padding-right: 40px;*/
+}
+
+.footer-distributed .footer-right p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px 42px 0 0;
+    color: #ffffff;
+}
+
+
+/* The contact form */
+
+.footer-distributed form {
+    display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+    display: block;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #d1d2d2;
+    width: 400px;
+    padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+    color: #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+    color: #5c666b;
+    opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder {
+    color: #5c666b;
+}
+
+.footer-distributed form input {
+    height: 55px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    width: 300px;
+}
+
+.footer-distributed form textarea {
+    height: 100px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    width: 300px;
+}
+
+.footer-distributed form button {
+    border-radius: 3px;
+    background-color: #33383b;
+    color: #ffffff;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+    float: center;
+    width: auto;
+}
+
+
+/*End of Footer CSS*/
+
+
+/*-----------Media Queries for different Screen Sizes--------*/
 
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -123,3 +350,84 @@ body {
         font-size: 18px;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    #name {
+        display: none;
+    }
+    header {
+        width: 100%;
+        height: 350px;
+        background: #101010;
+        overflow-x: hidden;
+        position: static;
+        background: url(../images/computer-sm.png) no-repeat;
+        /*        background-size: 100% 100%;*/
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        max-width: 100%;
+        max-height: auto;
+        background: #101010;
+        overflow-x: hidden;
+        position: static;
+        background: url(../images/computer-med.png);
+        /*        background-size: 150% 100%;*/
+    }
+}
+
+
+/*Footer Media Queries*/
+
+@media (max-width: 1000px) {
+    .footer-distributed {
+        font: bold 14px sans-serif;
+        height: auto;
+    }
+    .footer-distributed .footer-company-name {
+        font-size: 12px;
+    }
+    /*
+    .footer-distributed form input,
+    .footer-distributed form textarea {
+        width: 260px;
+    }
+*/
+    /*
+    .footer-distributed form button {
+        padding: 10px 110px;
+        margin-left: 21px;
+    }
+*/
+}
+
+@media (max-width: 800px) {
+    .footer-distributed {
+        padding: 30px;
+        height: auto;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        float: none;
+        max-width: 300px;
+        margin: 0 auto;
+        align-content: center;
+    }
+    .footer-distributed .footer-left {
+        margin-bottom: 40px;
+    }
+    .footer-distributed form {
+        margin-top: 10px;
+    }
+    .footer-distributed form button {
+        float: center;
+    }
+    #middleFoot {
+        display: none;
+    }
+}
+
+
+/*End of Media Query CSS*/

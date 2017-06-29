@@ -6,58 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Jose Ramirez</title>
 </head>
 
-
 <header>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
+    <div class="overlay">
+        <nav class="navbar navbar-fixed-top transparent-header" role="navigation">
+            <div class="container-fluid class ">
 
-            <!-- Add all page content inside this div if you want the side nav to push page content to the right
+                <!-- Add all page content inside this div if you want the side nav to push page content to the right
                     (not used if you only want the sidenav to sit on top of the page -->
-            <!-- logo JRV -->
-            <div id="main" class="navbar-left">
-                <a id="logo" class="navbar-brand-logo " href="index.html"><img style="max-width:80px; " src="images/jrvlogo.png"></a>
-            </div>
+                <!-- logo JRV -->
+                <div id="main" class="navbar-left">
+                    <a id="logo" class="navbar-brand-logo " href="index.html"><img style="max-width:80px; " src="images/jrvlogo.png"></a>
+                </div>
 
-            <!--Name shown at the top of the website Jose Ramirez-Villa-->
-            <a class="navbar-brand" id="name" href="index.html" id="name">Jose Ramirez-Villa</a>
-            <!--this is constains the button that will toggle the side navigation bar-->
-            <div id="buttonNav" class="navbar-header pull-right">
-                <!-- button will show when the navbar collapses to a specified size ie: mobilephone screen-->
-                <button type="button" class="navbar-toggle" data-toggle="tab" data-target="#mySidenav" data-target="#logo" onclick="openNav()">
+                <!--Name shown at the top of the website Jose Ramirez-Villa-->
+                <a class="navbar-brand" href="index.html" id="name">Jose <span>Ramirez-Villa</span></a>
+                <!--this is constains the button that will toggle the side navigation bar-->
+                <div id="buttonNav" class="navbar-header pull-right">
+                    <!-- button will show when the navbar collapses to a specified size ie: mobilephone screen-->
+                    <button type="button" class="navbar-toggle" data-toggle="tab" data-target="#mySidenav" data-target="#logo" onclick="openNav()">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                </div>
+
+                <!-- this will open when collpased button shows on the main menu -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="list-unstyled">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <!--                    <li><a href="#staff">Staff</a></li>-->
+                        <!--                    <li><a href="#testimonials">Testimonials</a></li>--></li>
+
+                    </ul>
+                </div>
+                <!-- main navigation items that will collapse when screen gets small -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <!--                    <li><a href="#staff">Staff</a></li>-->
+                        <!--                    <li><a href="#testimonials">Testimonials</a></li>--></li>
+                    </ul>
+
+                </div>
+
             </div>
 
-            <!-- this will open when collpased button shows on the main menu -->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <ul class="list-unstyled">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <!--                    <li><a href="#staff">Staff</a></li>-->
-                    <!--                    <li><a href="#testimonials">Testimonials</a></li>--></li>
-
-                </ul>
-            </div>
-            <!-- main navigation items that will collapse when screen gets small -->
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <!--                    <li><a href="#staff">Staff</a></li>-->
-                    <!--                    <li><a href="#testimonials">Testimonials</a></li>--></li>
-                </ul>
-            </div>
-        </div>
-        <!-- container -->
-    </nav>
-
+            <!-- container -->
+        </nav>
+    </div>
 
 </header>
 <!--END OF HEADER-->
@@ -82,61 +87,64 @@
                 <div class="row">
                     <section class="col-xs-6">
                         <h3>Software</h3>
-                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                     </section>
                     <section class="col-xs-6">
                         <h3>Web</h3>
-                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </section>
                 </div>
                 <div class="row">
                     <section class="col-xs-6 col-lg-6">
                         <h3>Film</h3>
-                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                     </section>
                     <section class="col-xs-6 col-lg-6">
                         <h3>Coding</h3>
-                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p>x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                     </section>
                 </div>
                 <div class="row">
                     <section class="col-xs-6 col-lg-6">
                         <h3>Engineering</h3>
-                        <p> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <p> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                     </section>
                     <section class="col-xs-6 col-lg-6">
                         <h3>Electrical</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip e</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     </section>
                 </div>
             </section>
         </div>
 
 
+
         <!--
-<div class="row">
-    <section id="staff" class="page col-sm-12">
-        <h2>Our Staff</h2>
-        <div class="row">
-            <section class="col-sm-4">
-                <h3>Dr. Winthrop</h3>
-                <p>Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and works tireless hours outside the clinic, performing free spay and neuter surgeries for the shelter.</p>
-            </section>
-            <section class="col-sm-4">
-                <h3>Dr. Chase</h3>
-                <p>Dr. Chase spends much of her free time helping the local rescue organization find homes for animals, such as Kibbles - a Maine Coon Cat who is part of the large Chase household, including two dogs, three cats, and a turtle.</p>
-            </section>
-            <section class="col-sm-4">
-                <h3>Dr Sanders</h3>
-                <p>Leroy walked into Dr. Sanders front door when he was moving into a new house. After searching for weeks for Leroy's guardians, he decided to make Leroy a part of his pet family, and now has three cats.</p>
+        <div class="row" id="staff">
+            <section class="page col-sm-12 text-center">
+                <h2>Our Staff</h2>
+                <div class="row">
+                    <section class="col-sm-4">
+                        <h3>Dr. Winthrop</h3>
+                        <p>Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and works tireless hours outside the clinic, performing free spay and neuter surgeries for the shelter.</p>
+                    </section>
+                    <section class="col-sm-4">
+                        <h3>Dr. Chase</h3>
+                        <p>Dr. Chase spends much of her free time helping the local rescue organization find homes for animals, such as Kibbles - a Maine Coon Cat who is part of the large Chase household, including two dogs, three cats, and a turtle.</p>
+                    </section>
+                    <section class="col-sm-4">
+                        <h3>Dr Sanders</h3>
+                        <p>Leroy walked into Dr. Sanders front door when he was moving into a new house. After searching for weeks for Leroy's guardians, he decided to make Leroy a part of his pet family, and now has three cats.</p>
+                    </section>
+                </div>
             </section>
         </div>
-    </section>
-</div>
 -->
 
-        <!--<div class="row">
-            <section id="testimonials" class="page col-sm-12">
+
+        <!--
+        <div class="row" id="testimonials">
+            <section class="page col-sm-12 text-center">
                 <h2>Testimonials</h2>
                 <div class="row">
                     <section class="col-sm-6">
@@ -166,12 +174,74 @@
                         </blockquote>
                     </section>
                 </div>
-            </section>
-        </div>-->
+-->
+        </section>
+    </div>
     </div>
     <!-- row -->
     </div>
     <!-- content container -->
+    <footer class="footer-distributed">
+
+        <div id="firstFoot" class="row">
+            <section class="page col-sm-12 text-center">
+                <div class="col-sm-4">
+
+                    <h3>Jose <span>Ramirez-Villa</span></h3>
+
+                    <p class="footer-links">
+                        <a href="#about">About</a> ·
+                        <a href="#skills">Skills</a> ·
+                        <a href="#">Blog</a> ·
+                        <a href="#">Faq</a> ·
+                        <a href="#">Contact</a>
+                    </p>
+
+                    <p class="footer-company-name">Jose Ramirez-Villa &copy; 2017</p>
+
+                    <div class="footer-icons">
+
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div id="middleFoot" class="col-sm-4">
+
+                    <h3>Jose <span>Ramirez-Villa</span></h3>
+
+                    <p class="footer-links">
+                        <a href="#about">About</a> ·
+                        <a href="#skills">Skills</a> ·
+                        <a href="#">Blog</a> ·
+                        <a href="#">Faq</a> ·
+                        <a href="#">Contact</a>
+                    </p>
+
+                </div>
+
+                <div id="lastFoot" class="col-sm-4 text-center">
+                    <section class="row text-center">
+
+                        <p class="text-center">Contact Me</p>
+
+                        <form class="col-xm-12" action="#" method="post">
+                            <input type="text" name="email" placeholder="Email" />
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <button>Send</button>
+                        </form>
+                    </section>
+                </div>
+
+            </section>
+        </div>
+    </footer>
+
+
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>

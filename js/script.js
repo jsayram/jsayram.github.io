@@ -1,21 +1,30 @@
 //used to open the side nav when the user presses the collapsed button
 function openNav() {
-    document.getElementById("mySidenav").style.width = "210px";
-    document.getElementById("main").style.marginleft = "210px";
-    document.getElementById('name').style.display = 'none';
+    if ($(window).width() < 321) {
 
-
-    if ($(window).width() > 360 && $(window).width() < 599) {
+        document.getElementById("mySidenav").style.width = "150px";
+        document.getElementById('main').style.marginLeft = "150px";
+        document.getElementById('name').style.display = 'none';
         document.getElementById('logo').style.display = 'block';
+    } else if ($(window).width() > 321 && $(window).width() <= 360) {
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById('main').style.marginLeft = "200px";
+        document.getElementById('name').style.display = 'none';
+        document.getElementById('logo').style.display = 'block';
+
+    } else if ($(window).width() > 360 && $(window).width() <= 599) {
+        document.getElementById('logo').style.display = 'block';
+        document.getElementById('name').style.display = 'none';
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
 
     } else if ($(window).width() > 599) {
         document.getElementById('logo').style.display = 'block';
         document.getElementById('name').style.display = 'block';
-    } else {
-        document.getElementById('logo').style.display = 'none';
-        document.getElementById('name').style.display = 'none';
-
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById('main').style.marginLeft = "200px";
     }
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 
 }
 
@@ -24,7 +33,7 @@ function closeNav() {
         document.getElementById('name').style.display = 'none';
         document.getElementById('logo').style.display = 'block';
         document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById('main').style.marginLeft = "0";
 
     } else {
         document.getElementById('name').style.display = 'block';
@@ -32,12 +41,17 @@ function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
     }
+    document.body.style.backgroundColor = "white";
 }
 
 window.onorientationchange = function () {
     location.reload()
 };
 
+//refreshes the page when its being resized
+$(window).resize(function () {
+    location.reload();
+});
 
 
 //This allow scrolling to specified # to be smoother
@@ -60,9 +74,9 @@ $('a[href*="#"]')
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
-                $('html, body').animate({
+                $('html, body, footer').animate({
                     scrollTop: target.offset().top - 90
-                }, 1000, function () {
+                }, 500, function () {
                     // Callback after animation
                     // Must change focus!
                     var $target = $(target);
@@ -77,3 +91,45 @@ $('a[href*="#"]')
             }
         }
     });
+
+
+
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.navbar-fixed-bottom, .navbar-fixed-top').outerHeight();
+
+$(window).scroll(function (event) {
+    didScroll = true;
+});
+
+setInterval(function () {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if (Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight) {
+        // Scroll Down
+        $('.navbar-fixed-bottom, .navbar-fixed-top').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if (st + $(window).height() < $(document).height()) {
+            $('.navbar-fixed-bottom, .navbar-fixed-top').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+
+    lastScrollTop = st;
+}
