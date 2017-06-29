@@ -111,11 +111,13 @@ body {
 #about {
     background-color: #fffffa;
     color: #080705;
+    font-size: 12px;
 }
 
 #skills {
     background-color: #40434e;
-    color: #080705;
+    color: #fffffa;
+    font-size: 12px;
 }
 
 #staff {

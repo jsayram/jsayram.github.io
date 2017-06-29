@@ -49,9 +49,9 @@ window.onorientationchange = function () {
 };
 
 //refreshes the page when its being resized
-$(window).resize(function () {
-    location.reload();
-});
+//$(window).resize(function () {
+//    location.reload();
+//});
 
 
 //This allow scrolling to specified # to be smoother
