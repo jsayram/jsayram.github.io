@@ -77,7 +77,7 @@ $('a[href*="#"]')
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body, footer').animate({
-                    scrollTop: target.offset().top - 90
+                    scrollTop: target.offset().top - 20
                 }, 500, function () {
                     // Callback after animation
                     // Must change focus!
