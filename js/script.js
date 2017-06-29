@@ -1,30 +1,32 @@
 //used to open the side nav when the user presses the collapsed button
+var navOpenBig = '200px';
+var navOpenSmall = '150px';
+
 function openNav() {
     if ($(window).width() < 321) {
 
-        document.getElementById("mySidenav").style.width = "150px";
-        document.getElementById('main').style.marginLeft = "150px";
+        document.getElementById("mySidenav").style.width = navOpenSmall;
+        document.getElementById('main').style.marginLeft = navOpenSmall;
         document.getElementById('name').style.display = 'none';
         document.getElementById('logo').style.display = 'block';
     } else if ($(window).width() > 321 && $(window).width() <= 360) {
-        document.getElementById("mySidenav").style.width = "200px";
-        document.getElementById('main').style.marginLeft = "200px";
+        document.getElementById("mySidenav").style.width = navOpenBig;
+        document.getElementById('main').style.marginLeft = navOpenBig;
         document.getElementById('name').style.display = 'none';
         document.getElementById('logo').style.display = 'block';
 
     } else if ($(window).width() > 360 && $(window).width() <= 599) {
         document.getElementById('logo').style.display = 'block';
         document.getElementById('name').style.display = 'none';
-        document.getElementById("mySidenav").style.width = "200px";
-        document.getElementById("main").style.marginLeft = "200px";
+        document.getElementById("mySidenav").style.width = navOpenBig;
+        document.getElementById("main").style.marginLeft = navOpenBig;
 
     } else if ($(window).width() > 599) {
         document.getElementById('logo').style.display = 'block';
         document.getElementById('name').style.display = 'block';
-        document.getElementById("mySidenav").style.width = "200px";
-        document.getElementById('main').style.marginLeft = "200px";
+        document.getElementById("mySidenav").style.width = navOpenBig;
+        document.getElementById('main').style.marginLeft = navOpenBig;
     }
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 
 }
 
@@ -133,3 +135,31 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
+
+//closes navigation when clicking anywhere in the screen after opening the
+
+$("#closeButton").click(function (e) {
+    e.stopPropagation();
+    $(".sidenav").toggleClass("active");
+});
+$("#buttonNav").click(function (e) {
+    e.stopPropagation();
+    if ($("#mySidenav").hasClass("active")) {
+        document.getElementById("mySidenav").style.width = "0";
+        closeNav();
+
+    } else {
+        document.getElementById("mySidenav").style.width = navOpenBig;
+        openNav();
+    }
+
+    $('.sidenav').toggleClass("active");
+});
+
+$(document).click(function () {
+    if ($("#mySidenav").hasClass("active")) {
+        document.getElementById("mySidenav").style.width = "0";
+        closeNav();
+        $(".sidenav").removeClass("active");
+    }
+});
