@@ -29,15 +29,15 @@ Hide NavBar up in scrolling up*/
     color: #702632;
     float: left;
     padding-left:1em;
-    padding-top:1.1em;
+    padding-top:1.8em;
 
 }
 
 
 .navbar-brand span {
-    color: #702632;
+    color:#912f40;
     font: normal 1px 'Cookie', cursive;
-    font-size: 35px;
+    font-size: 25px;
     font-family:'Fira Sans', sans-serif;
     font-weight:100;
 }
@@ -50,9 +50,6 @@ Hide NavBar up in scrolling up*/
 
 }
 
-.navbar-nav {
-    margin-top: 5px;
-}
 
 #myNavbar a {
 
@@ -135,9 +132,8 @@ header {
 
 body {
     background-color: #111;
-    color: #fffffa;
-    font-size: 15px;
-    font-family:'Fira Sans', sans-serif;
+/*    font-size: 15px;*/
+/*    font-family:'Fira Sans', sans-serif;*/
     margin-top:11px;
     font-weight:200;
 }
@@ -149,6 +145,7 @@ body {
     color: #702632;
     color: #912f40;
     color: #fffffa;
+    color: #912f40;
 }
 
 
@@ -180,14 +177,18 @@ body {
     font-weight:200;
 }
 
-#faq {
-    background-color: #702632;
-    color: #080705;
+#faq{
+    background-color: #111;
+    color: #fffffa;
+    font-family:'Fira Sans', sans-serif;
+    font-weight:200;
+
 }
 
-#blog {
-    background-color: #40434e;
-    color: #080705;
+#blogs {
+    background-color: black;
+    font-family:'Fira Sans', sans-serif;
+    font-weight:200;
 }
 
 
@@ -282,7 +283,7 @@ body {
 }
 
 .footer-distributed h3 span {
-    color: #702632;
+    color:#912f40;
 }
 
 
@@ -460,7 +461,10 @@ body {
         overflow-x: hidden;
         position: static;
         background: url(../images/computer-sm.png) no-repeat;
-                background-size: auto,auto;
+
+    }
+    body{
+        background-color:#101010;
     }
 }
 
@@ -468,18 +472,19 @@ body {
     .navbar-brand {
         color: #702632;
         float: left;
-        padding-left:.1em;
-        padding-top:1em;
+        padding-left:0.2em;
+        padding-top:1.8em;
 
     }
     header {
+        background: #101010;
         max-width: 100%;
         max-height: auto;
-        background: #101010;
         overflow-x: hidden;
         position: static;
         background: url(../images/computer-med.png) no-repeat;
-        background-size: 670px;
+        background-size:auto,auto;
+
     }
 }
 
