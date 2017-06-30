@@ -1,6 +1,6 @@
 //used to open the side nav when the user presses the collapsed button
 var navOpenBig = '100px';
-var navOpenSmall = '50px';
+var navOpenSmall = '90px';
 
 function openNav() {
     if ($(window).width() < 321) {
