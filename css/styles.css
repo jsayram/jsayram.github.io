@@ -13,76 +13,70 @@ Hide NavBar up in scrolling up*/
 }
 
 .navbar-left {
-/*    width: 7em;*/
+    /*    width: 7em;*/
 }
 
 .navbar-brand-logo>img {
-/*    display: block;*/
+    /*    display: block;*/
     float: left;
-/*    height: auto;*/
-/*    margin-right: 10px;*/
+    /*    height: auto;*/
+    /*    margin-right: 10px;*/
     padding-top: 15px;
-    width:50px;
+    width: 50px;
 }
 
 .navbar-brand {
     color: #702632;
     float: left;
-    padding-left:1em;
-    padding-top:1.8em;
-
+    padding-left: 1em;
+    padding-top: 1.8em;
 }
-
 
 .navbar-brand span {
-    color:#912f40;
+    color: #912f40;
     font: normal 1px 'Cookie', cursive;
     font-size: 25px;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:100;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
 }
+
 .navbar-brand span:hover {
     color: #fffffa;
     font: normal 1px 'Cookie', cursive;
-    font-size:35px;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:200;
-
+    font-size: 35px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
 }
 
-
 #myNavbar a {
-
     color: #fffffa;
     font-size: 15px;
-    font-family:'Fira Sans', sans-serif;
-    margin-top:11px;
-    font-weight:200;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 11px;
+    font-weight: 200;
 }
 
 #myNavbar a:hover {
     color: #702632;
     background: transparent;
-    font-size:20px;
-
+    font-size: 20px;
 }
 
-a#envelopeL  {
+a#envelopeL {
     color: #fffffa;
     font-size: 40px;
-    font-family:'Fira Sans', sans-serif;
-    margin-top:1px;
-    font-weight:200;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 1px;
+    font-weight: 200;
 }
-a#envelopeL:hover  {
+
+a#envelopeL:hover {
     color: #702632;
     font-size: 40px;
-    font-family:'Fira Sans', sans-serif;
-    margin-top:1px;
-    font-weight:200;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 1px;
+    font-weight: 200;
 }
-
-
 
 .sidebar-nav :active,
 .sidebar-nav :focus {
@@ -104,10 +98,11 @@ a#envelopeL:hover  {
 
 button span {
     background-color: #fffffa;
-    margin-top:10px;
+    margin-top: 10px;
 }
+
 button:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 .overlay {
@@ -124,7 +119,7 @@ header {
     overflow-x: hidden;
     position: relative;
     background: url(../images/computer_lg.png);
-        background-size: auto;
+    background-size: auto;
 }
 
 
@@ -132,14 +127,15 @@ header {
 
 body {
     background-color: #111;
-/*    font-size: 15px;*/
-/*    font-family:'Fira Sans', sans-serif;*/
-    margin-top:11px;
-    font-weight:200;
+    /*    font-size: 15px;*/
+    /*    font-family:'Fira Sans', sans-serif;*/
+    margin-top: 11px;
+    font-weight: 200;
 }
 
 
 /*my pallete*/
+
 {
     color: #40434e;
     color: #702632;
@@ -148,54 +144,52 @@ body {
     color: #912f40;
 }
 
-
-
 #about {
     background-color: #fffffa;
     color: #080705;
     font-size: 12px;
-    font-style:normal;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:200;
+    font-style: normal;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
 }
+
 #about p {
     background-color: #fffffa;
     color: #080705;
     font-size: 12px;
-    font-style:normal;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:200;
-    margin-left:10%;
-    margin-right:10%;
+    font-style: normal;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #skills {
     background-color: #40434e;
     color: #fffffa;
     font-size: 12px;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:200;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
 }
 
-#faq{
+#faq {
     background-color: #111;
     color: #fffffa;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:200;
-
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
 }
 
 #blogs {
     background-color: black;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:200;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
 }
 
 
 /*Side Navigation*/
 
 .sidenav {
-    margin-top:0%;
+    margin-top: 0%;
     height: 100%;
     width: 0;
     position: fixed;
@@ -211,7 +205,7 @@ body {
 
 .sidenav .list-unstyled {
     float: right;
-    line-height:30px;
+    line-height: 30px;
 }
 
 .sidenav a {
@@ -222,10 +216,10 @@ body {
     display: block;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    font-family:'Fira Sans Extra Condensed', sans-serif;
-    font-weight:100;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 100;
     line-height: inherit;
-    float:right;
+    float: right;
 }
 
 .sidenav a:hover,
@@ -234,7 +228,10 @@ body {
     cursor: pointer;
 }
 
+
 /*This can be added*/
+
+
 /*
 .sidenav .closebtn {
     display: none;
@@ -283,7 +280,7 @@ body {
 }
 
 .footer-distributed h3 span {
-    color:#912f40;
+    color: #912f40;
 }
 
 
@@ -300,8 +297,8 @@ body {
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
-    font-family:'Fira Sans', sans-serif;
-    font-weight:200;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
 }
 
 .footer-distributed .footer-company-name {
@@ -332,6 +329,7 @@ body {
     margin-right: 3px;
     margin-bottom: 5px;
 }
+
 
 /* Footer contact form */
 
@@ -409,18 +407,19 @@ body {
     float: center;
     width: auto;
 }
-#belowFooter{
-    width:100%;
-    height:100%;
-    color:#fffffa;
-    text-align: center;
-    background-color:black;
-    padding-top:10px;
-    line-height: normal;
-    font-family:'Fira Sans', sans-serif;
-    font-size:10px;
 
+#belowFooter {
+    width: 100%;
+    height: 100%;
+    color: #fffffa;
+    text-align: center;
+    background-color: black;
+    padding-top: 10px;
+    line-height: normal;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 10px;
 }
+
 
 /*End of Footer CSS*/
 
@@ -442,13 +441,12 @@ body {
         display: block;
         -webkit-transition: 0.3s;
         transition: 0.3s;
-        font-family:'Fira Sans Extra Condensed', sans-serif;
-        font-weight:100;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-weight: 100;
         line-height: 15px;
-        float:right;
+        float: right;
     }
 }
-
 
 @media only screen and (max-width: 320px) {
     #name {
@@ -461,10 +459,9 @@ body {
         overflow-x: hidden;
         position: static;
         background: url(../images/computer-sm.png) no-repeat;
-
     }
-    body{
-        background-color:#101010;
+    body {
+        background-color: #101010;
     }
 }
 
@@ -472,9 +469,8 @@ body {
     .navbar-brand {
         color: #702632;
         float: left;
-        padding-left:0.2em;
-        padding-top:1.8em;
-
+        padding-left: 0.2em;
+        padding-top: 1.8em;
     }
     header {
         background: #101010;
@@ -483,8 +479,7 @@ body {
         overflow-x: hidden;
         position: static;
         background: url(../images/computer-med.png) no-repeat;
-        background-size:auto,auto;
-
+        background-size: auto, auto;
     }
 }
 
@@ -494,24 +489,12 @@ body {
 @media (max-width: 1000px) {
     .footer-distributed {
         font-size: 12px;
-        font-family:'Fira Sans', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
         height: auto;
     }
     .footer-distributed .footer-company-name {
         font-size: 12px;
     }
-    /*
-    .footer-distributed form input,
-    .footer-distributed form textarea {
-        width: 260px;
-    }
-*/
-    /*
-    .footer-distributed form button {
-        padding: 10px 110px;
-        margin-left: 21px;
-    }
-*/
 }
 
 @media (max-width: 800px) {
