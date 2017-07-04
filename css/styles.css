@@ -128,8 +128,7 @@ header {
     margin-top: 20%;
 }
 
-#headerText h2,
-h3 {
+#headerText h2 {
     color: aliceblue;
     font-size: 20px;
 }
@@ -518,7 +517,7 @@ font: normal 40px 'Cookie', cursive;
         right: 0;
         left: 0;
         z-index: 1030;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, .4);
         height: 60px;
         position: fixed;
         transition: top 0.2s ease-in-out;
@@ -582,7 +581,6 @@ font: normal 40px 'Cookie', cursive;
         font-weight: 100;
         line-height: 15px;
         float: right;
-        background: url(../images/computer-sm.png) no-repeat;
     }
     body {
         background-color: #101010;
