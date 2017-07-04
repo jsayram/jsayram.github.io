@@ -150,7 +150,7 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
-//closes navigation when clicking anywhere in the screen after opening the
+//closes navigation when clicking anywhere in the screen after opening the sidenav
 
 $("#closeButton").click(function (e) {
     e.stopPropagation();
