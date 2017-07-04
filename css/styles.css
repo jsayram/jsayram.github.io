@@ -20,7 +20,7 @@ Hide NavBar up in scrolling up*/
     /*    display: block;*/
     float: left;
     /*    height: auto;*/
-    /*    margin-right: 10px;*/
+    /*    margin-right: -10px;*/
     padding-top: 15px;
     width: 50px;
 }
@@ -43,7 +43,7 @@ Hide NavBar up in scrolling up*/
 .navbar-brand span:hover {
     color: #fffffa;
     font: normal 1px 'Cookie', cursive;
-    font-size: 35px;
+    font-size: 25px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
 }
@@ -89,10 +89,10 @@ a#envelopeL:hover {
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, .5);
     height: 60px;
     position: fixed;
-    transition: top 0.2s ease-in-out;
+    transition: top 0.1s ease-in-out;
     width: 100%;
 }
 
@@ -106,7 +106,7 @@ button:hover {
 }
 
 .overlay {
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .6);
     overflow: hidden;
     height: 100%;
     z-index: 2;
@@ -114,12 +114,33 @@ button:hover {
 
 header {
     width: 100%;
-    height: 450px;
+    height: 1000px;
     background: #101010;
     overflow-x: hidden;
     position: relative;
+    background: url(../images/desk_compu_long2.png) no-repeat;
+    background-size: 100%, auto;
+    background-position: center;
+}
+
+#headerText {
+    object-position: center;
+    margin-top: 20%;
+}
+
+#headerText h2,
+h3 {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#headerText p {
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 10%;
     background: url(../images/computer_lg.png);
     background-size: auto;
+
 }
 
 
@@ -129,6 +150,7 @@ body {
     background-color: #111;
     /*    font-size: 15px;*/
     /*    font-family:'Fira Sans', sans-serif;*/
+    margin-top: 0px;
     margin-top: 11px;
     font-weight: 200;
 }
@@ -179,7 +201,7 @@ body {
     font-weight: 200;
 }
 
-#blogs {
+#porfolio {
     background-color: black;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
@@ -234,12 +256,12 @@ body {
 
 /*
 .sidenav .closebtn {
-    display: none;
-    position: absolute;
-    right: 10px;
-    margin-top: 0px;
-    font-size: 30px;
-    font: normal 40px 'Cookie', cursive;
+display: none;
+position: absolute;
+right: 10px;
+margin-top: 0px;
+font-size: 30px;
+font: normal 40px 'Cookie', cursive;
 }
 */
 
@@ -448,16 +470,123 @@ body {
     }
 }
 
+@media only screen and (max-width: 1600px) {
+    .navbar-brand {
+        color: #702632;
+        float: left;
+        padding-left: .8em;
+        padding-top: 1.8em;
+    }
+    header {
+        background: #101010;
+        max-width: 100%;
+        max-height: auto;
+        height: 800px;
+        width: auto;
+        overflow-x: hidden;
+        position: static;
+        background: url(../images/desk_compu_short2.png)no-repeat;
+        background-size: 130%, auto;
+        background-position: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        color: #702632;
+        float: left;
+        padding-left: .2em;
+        padding-top: 1.8em;
+    }
+    header {
+        background: #101010;
+        max-width: 100%;
+        max-height: auto;
+        height: 500px;
+        width: auto;
+        overflow-x: hidden;
+        position: static;
+        background: url(../images/desk_compu_long2.png)no-repeat;
+        background-size: 100%, auto;
+        background-position: center;
+    }
+    #headerText {
+        object-position: center;
+        margin-top: 10em;
+    }
+}
+
 @media only screen and (max-width: 320px) {
+    .navbar-fixed-bottom,
+    .navbar-fixed-top {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: rgba(0, 0, 0, .8);
+        height: 60px;
+        position: fixed;
+        transition: top 0.2s ease-in-out;
+        width: 100%;
+    }
+    .navbar-brand span {
+        font-size: 20px;
+    }
     #name {
-        display: none;
+        /*        display: none;*/
+        padding-top: 20px;
     }
     header {
         width: 100%;
-        height: 350px;
+        height: 500px;
         background: #101010;
         overflow-x: hidden;
         position: static;
+        background: url(../images/desk_compu_long2.png) no-repeat;
+        background-size: 100%, auto;
+        background-position: center;
+    }
+    .navbar-brand-logo>img {
+        width: 30px;
+    }
+    button span {
+        background-color: #fffffa;
+        margin-top: auto;
+    }
+    #headerText {
+        object-position: center;
+        margin-top: 60%;
+    }
+    .sidenav {
+        margin-top: 0%;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .8);
+        overflow-x: hidden;
+        -webkit-transition: 0.2s;
+        transition: 0.2s;
+        padding-top: 40px;
+    }
+    .sidenav .list-unstyled {
+        float: right;
+        line-height: 30px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 70px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fffffa;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-weight: 100;
+        line-height: 15px;
+        float: right;
         background: url(../images/computer-sm.png) no-repeat;
     }
     body {
@@ -465,7 +594,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-height: 376px) {
     .navbar-brand {
         color: #702632;
         float: left;
@@ -477,9 +606,28 @@ body {
         max-width: 100%;
         max-height: auto;
         overflow-x: hidden;
+        height: 414px;
         position: static;
-        background: url(../images/computer-med.png) no-repeat;
-        background-size: auto, auto;
+        background: url(../images/desk_compu_long2.png) no-repeat;
+        background-size: 100%, auto;
+        background-position: center;
+    }
+    .sidenav .list-unstyled {
+        float: right;
+        line-height: 20px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 70px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #fffffa;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-weight: 100;
+        line-height: 10px;
+        float: right;
     }
 }
 
@@ -497,7 +645,7 @@ body {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 769px) {
     .footer-distributed {
         padding: 30px;
         height: auto;
