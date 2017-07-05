@@ -118,7 +118,7 @@ header {
     background: #101010;
     overflow-x: hidden;
     position: relative;
-    background: url(../images/desk_compu_long2.png) no-repeat;
+    background: url(../images/desk_compu_long2_low.jpg) no-repeat;
     background-size: 100%, auto;
     background-position: center;
 }
@@ -203,7 +203,6 @@ body {
 
 
 /*Side Navigation*/
-
 .sidenav {
     margin-top: 0%;
     height: 100%;
@@ -246,8 +245,6 @@ body {
 
 
 /*This can be added*/
-
-
 /*
 .sidenav .closebtn {
 display: none;
@@ -479,7 +476,7 @@ font: normal 40px 'Cookie', cursive;
         width: auto;
         overflow-x: hidden;
         position: static;
-        background: url(../images/desk_compu_short2.png)no-repeat;
+        background: url(../images/desk_compu_short2_low.jpg)no-repeat;
         background-size: 130%, auto;
         background-position: center;
     }
@@ -500,7 +497,7 @@ font: normal 40px 'Cookie', cursive;
         width: auto;
         overflow-x: hidden;
         position: static;
-        background: url(../images/desk_compu_long2.png)no-repeat;
+        background: url(../images/desk_compu_long2_low.jpg)no-repeat;
         background-size: 100%, auto;
         background-position: center;
     }
@@ -536,7 +533,7 @@ font: normal 40px 'Cookie', cursive;
         background: #101010;
         overflow-x: hidden;
         position: static;
-        background: url(../images/desk_compu_long2.png) no-repeat;
+        background: url(../images/desk_compu_long2_low.jpg) no-repeat;
         background-size: 100%, auto;
         background-position: center;
     }
@@ -601,7 +598,7 @@ font: normal 40px 'Cookie', cursive;
         overflow-x: hidden;
         height: 414px;
         position: static;
-        background: url(../images/desk_compu_long2.png) no-repeat;
+        background: url(../images/desk_compu_long2_low.jpg) no-repeat;
         background-size: 100%, auto;
         background-position: center;
     }
@@ -623,7 +620,6 @@ font: normal 40px 'Cookie', cursive;
         float: right;
     }
 }
-
 
 /*Footer Media Queries*/
 
