@@ -9,7 +9,7 @@ Hide NavBar up in scrolling up*/
 }
 
 .navbar-header {
-    margin-top: 5px;
+    /*    margin-top:;*/
 }
 
 .navbar-left {
@@ -90,7 +90,7 @@ a#envelopeL:hover {
     left: 0;
     z-index: 1030;
     background-color: rgba(0, 0, 0, .5);
-    height: 60px;
+    height: 70px;
     position: fixed;
     transition: top 0.1s ease-in-out;
     width: 100%;
@@ -106,7 +106,7 @@ button:hover {
 }
 
 .overlay {
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .2);
     overflow: hidden;
     height: 100%;
     z-index: 2;
@@ -118,25 +118,27 @@ header {
     background: #101010;
     overflow-x: hidden;
     position: relative;
-    background: url(../images/desk_compu_long2_low.jpg) no-repeat;
+    background: url(../images/desk_compu_short2.png) no-repeat;
     background-size: 100%, auto;
     background-position: center;
 }
 
 #headerText {
     object-position: center;
-    margin-top: 20%;
+    margin-top: 25em;
+    background-color: rgba(0, 0, 0, .3);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
 }
 
 #headerText h2 {
     color: aliceblue;
-    font-size: 20px;
+    font-size: 45px;
 }
 
 #headerText p {
     color: aliceblue;
-    font-size: 25px;
-    margin-bottom: 10%;
+    font-size: 45px;
 }
 
 
@@ -203,6 +205,7 @@ body {
 
 
 /*Side Navigation*/
+
 .sidenav {
     margin-top: 0%;
     height: 100%;
@@ -211,7 +214,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .5);
     overflow-x: hidden;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -245,6 +248,8 @@ body {
 
 
 /*This can be added*/
+
+
 /*
 .sidenav .closebtn {
 display: none;
@@ -343,6 +348,10 @@ font: normal 40px 'Cookie', cursive;
     margin-bottom: 5px;
 }
 
+.footer-distributed .footer-icons a:hover {
+    font-size: 25px;
+}
+
 
 /* Footer contact form */
 
@@ -439,31 +448,9 @@ font: normal 40px 'Cookie', cursive;
 
 /*-----------Media Queries for different Screen Sizes--------*/
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-    .sidenav a {
-        padding: 8px 8px 8px 60px;
-        text-decoration: none;
-        font-size: 18px;
-        color: #fffffa;
-        display: block;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-        font-family: 'Fira Sans Extra Condensed', sans-serif;
-        font-weight: 100;
-        line-height: 15px;
-        float: right;
-    }
-}
-
 @media only screen and (max-width: 1600px) {
     .navbar-brand {
-        color: #702632;
+        color: #912f40;
         float: left;
         padding-left: .8em;
         padding-top: 1.8em;
@@ -476,18 +463,65 @@ font: normal 40px 'Cookie', cursive;
         width: auto;
         overflow-x: hidden;
         position: static;
-        background: url(../images/desk_compu_short2_low.jpg)no-repeat;
+        background: url(../images/desk_compu_short2.png)no-repeat;
         background-size: 130%, auto;
         background-position: center;
+    }
+    #headerText {
+        object-position: center;
+        margin-top: 20em;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    #headerText h2 {
+        color: aliceblue;
+        font-size: 40px;
+    }
+    #headerText p {
+        color: aliceblue;
+        font-size: 50px;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    .navbar-brand-logo>img {
+        /*    display: block;*/
+        float: left;
+        /*    height: auto;*/
+        /*    margin-right: -10px;*/
+        padding-top: 15px;
+        width: 35px;
+    }
     .navbar-brand {
         color: #702632;
         float: left;
         padding-left: .2em;
-        padding-top: 1.8em;
+        padding-top: 1.3em;
+    }
+    .navbar-brand span {
+        color: #912f40;
+        font: normal 1px 'Cookie', cursive;
+        font-size: 20px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 100;
+    }
+    .navbar-brand span:hover {
+        color: #fffffa;
+        font: normal 1px 'Cookie', cursive;
+        font-size: 20px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 200;
+    }
+    .navbar-fixed-bottom,
+    .navbar-fixed-top {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: rgba(0, 0, 0, .5);
+        height: 50px;
+        position: fixed;
+        transition: top 0.1s ease-in-out;
+        width: 100%;
     }
     header {
         background: #101010;
@@ -497,32 +531,62 @@ font: normal 40px 'Cookie', cursive;
         width: auto;
         overflow-x: hidden;
         position: static;
-        background: url(../images/desk_compu_long2_low.jpg)no-repeat;
-        background-size: 100%, auto;
+        background: url(../images/desk_compu_short2_low.jpg)no-repeat;
+        background-size: 130%, auto;
         background-position: center;
     }
     #headerText {
         object-position: center;
-        margin-top: 10em;
+        margin-top: 12em;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    #headerText h2 {
+        color: aliceblue;
+        font-size: 35px;
+    }
+    #headerText p {
+        color: aliceblue;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*
+    .navbar-brand {
+        color: #702632;
+        float: left;
+        padding-left: .2em;
+        padding-top: 1.8em;
+    }
+*/
+    header {
+        background: #101010;
+        max-width: 100%;
+        max-height: auto;
+        height: 660px;
+        width: auto;
+        overflow-x: hidden;
+        position: static;
+        background: url(../images/desk_compu_long2_low.jpg)no-repeat;
+        background-size: 110%, auto;
+        background-position: top;
+    }
+    #headerText {
+        object-position: center;
+        margin-top: 17em;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    #headerText h2 {
+        color: aliceblue;
+        font-size: 25px;
+    }
+    #headerText p {
+        color: aliceblue;
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 320px) {
-    .navbar-fixed-bottom,
-    .navbar-fixed-top {
-        position: fixed;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-        background-color: rgba(0, 0, 0, .4);
-        height: 60px;
-        position: fixed;
-        transition: top 0.2s ease-in-out;
-        width: 100%;
-    }
-    .navbar-brand span {
-        font-size: 20px;
-    }
     #name {
         /*        display: none;*/
         padding-top: 20px;
@@ -556,7 +620,7 @@ font: normal 40px 'Cookie', cursive;
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, .5);
         overflow-x: hidden;
         -webkit-transition: 0.2s;
         transition: 0.2s;
@@ -581,6 +645,28 @@ font: normal 40px 'Cookie', cursive;
     }
     body {
         background-color: #101010;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 60px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #fffffa;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        font-weight: 100;
+        line-height: 15px;
+        float: right;
     }
 }
 
@@ -620,6 +706,7 @@ font: normal 40px 'Cookie', cursive;
         float: right;
     }
 }
+
 
 /*Footer Media Queries*/
 

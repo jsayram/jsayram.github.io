@@ -3,14 +3,15 @@ var navOpenBig = '100px';
 var navOpenSmall = '90px';
 var navOpenXSmall = '50px';
 var overlayLight = 'rgba(0, 0, 0, .1)';
-var overlayDark = 'rgba(0, 0, 0, .6)';
+var overlayDark = 'rgba(0, 0, 0, .2)';
 
 function openNav() {
     if ($(window).width() <= 321) {
 
         document.getElementById("mySidenav").style.width = navOpenSmall;
         document.getElementById('main').style.marginLeft = navOpenSmall;
-        document.getElementById('headerText').style.marginLeft = navOpenSmall;
+
+        //        document.getElementById('headerText').style.marginLeft = navOpenSmall;
         document.getElementById('name').style.display = 'none';
         document.getElementById('logo').style.display = 'block';
         document.getElementById('overlay').style.backgroundColor = overlayLight;
@@ -18,7 +19,6 @@ function openNav() {
     } else if ($(window).width() > 321 && $(window).width() <= 360) {
         document.getElementById("mySidenav").style.width = navOpenBig;
         document.getElementById('main').style.marginLeft = navOpenBig;
-        document.getElementById('headerText').style.marginLeft = navOpenSmall;
         document.getElementById('name').style.display = 'block';
         document.getElementById('logo').style.display = 'block';
         document.getElementById('overlay').style.backgroundColor = overlayLight;
@@ -28,7 +28,6 @@ function openNav() {
         document.getElementById('name').style.display = 'block';
         document.getElementById("mySidenav").style.width = navOpenBig;
         document.getElementById("main").style.marginLeft = navOpenBig;
-        document.getElementById('headerText').style.marginLeft = navOpenXSmall;
         document.getElementById('overlay').style.backgroundColor = overlayLight;
 
     } else if ($(window).width() > 599) {
@@ -38,6 +37,7 @@ function openNav() {
         document.getElementById('main').style.marginLeft = navOpenBig;
         document.getElementById('overlay').style.backgroundColor = overlayLight;
     }
+    document.getElementById('headerText').style.display = 'none';
 
 }
 
@@ -47,7 +47,7 @@ function closeNav() {
         document.getElementById('logo').style.display = 'block';
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById('main').style.marginLeft = "0";
-        document.getElementById('headerText').style.marginLeft = "0";
+        //        document.getElementById('headerText').style.marginLeft = "0";
         document.getElementById('overlay').style.backgroundColor = overlayDark;
 
     } else {
@@ -55,10 +55,13 @@ function closeNav() {
         document.getElementById('logo').style.display = 'block';
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
-        document.getElementById('headerText').style.marginLeft = "0";
+        //        document.getElementById('headerText').style.marginLeft = "0";
         document.getElementById('overlay').style.backgroundColor = overlayDark;
     }
+    document.getElementById('headerText').style.display = 'block';
 }
+
+
 
 window.onorientationchange = function () {
     location.reload()
