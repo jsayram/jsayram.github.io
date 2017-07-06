@@ -141,6 +141,37 @@ header {
     font-size: 45px;
 }
 
+.middleButton1,
+.middleButton2 {
+    background: none;
+    background-color: none;
+    color: #fffffa;
+    border: 2px solid #fffffa;
+    margin: 1em;
+    margin-top: 0em;
+    font-size: 3em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    padding: 3px;
+    /* Green */
+}
+
+.middleButton1:hover {
+    background-color: #fffffa;
+    color: #40434e;
+    border: 3px solid #fffffa;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.middleButton2:hover {
+    /*    background-color: #fffffa;*/
+    color: #fffffa;
+    border: 5px solid #fffffa;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 /*---------------BODY-------------*/
 
@@ -548,6 +579,10 @@ font: normal 40px 'Cookie', cursive;
         color: aliceblue;
         font-size: 30px;
     }
+    .middleButton1,
+    .middleButton2 {
+        font-size: 2em;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -583,6 +618,10 @@ font: normal 40px 'Cookie', cursive;
     #headerText p {
         color: aliceblue;
         font-size: 20px;
+    }
+    .middleButton1,
+    .middleButton2 {
+        font-size: 1em;
     }
 }
 
