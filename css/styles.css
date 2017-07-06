@@ -33,7 +33,7 @@ Hide NavBar up in scrolling up*/
 }
 
 .navbar-brand span {
-    color: #912f40;
+    color: #fffffa;
     font: normal 1px 'Cookie', cursive;
     font-size: 25px;
     font-family: 'Fira Sans', sans-serif;
@@ -43,7 +43,7 @@ Hide NavBar up in scrolling up*/
 .navbar-brand span:hover {
     color: #fffffa;
     font: normal 1px 'Cookie', cursive;
-    font-size: 25px;
+    font-size: 26px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
 }
@@ -130,6 +130,7 @@ header {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 100;
     padding-bottom: 10px;
+    font-style: normal;
 }
 
 #headerText h2 {
@@ -189,19 +190,6 @@ header {
     cursor: pointer;
     text-decoration: none;
 }
-
-
-/*
-.middleButton1:link {
-    text-decoration: none;
-    color: #fffffa;
-}
-
-.middleButton1:active {
-    text-decoration: none;
-    color: #fffffa;
-}
-*/
 
 
 /*---------------BODY-------------*/
@@ -560,7 +548,7 @@ font: normal 40px 'Cookie', cursive;
         padding-top: 1.3em;
     }
     .navbar-brand span {
-        color: #912f40;
+        color: #fffffa;
         font: normal 1px 'Cookie', cursive;
         font-size: 20px;
         font-family: 'Fira Sans', sans-serif;
