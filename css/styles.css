@@ -129,6 +129,7 @@ header {
     background-color: rgba(0, 0, 0, .3);
     font-family: 'Fira Sans', sans-serif;
     font-weight: 100;
+    padding-bottom: 10px;
 }
 
 #headerText h2 {
@@ -153,7 +154,14 @@ header {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 100;
     padding: 3px;
+    text-decoration: none;
     /* Green */
+}
+
+.middleButton1:visited,
+.middleButton2:visited,
+{
+    color: #fffffa;
 }
 
 .middleButton1:hover {
@@ -170,6 +178,16 @@ header {
     border: 5px solid #fffffa;
     cursor: pointer;
     text-decoration: none;
+}
+
+.middleButton1:link {
+    text-decoration: none;
+    color: #fffffa;
+}
+
+.middleButton1:active {
+    text-decoration: none;
+    color: #fffffa;
 }
 
 
@@ -570,6 +588,7 @@ font: normal 40px 'Cookie', cursive;
         object-position: center;
         margin-top: 12em;
         background-color: rgba(0, 0, 0, .3);
+        padding-bottom: 10px;
     }
     #headerText h2 {
         color: aliceblue;
@@ -581,6 +600,7 @@ font: normal 40px 'Cookie', cursive;
     }
     .middleButton1,
     .middleButton2 {
+        border: 1px solid #fffffa;
         font-size: 2em;
     }
 }
@@ -610,6 +630,7 @@ font: normal 40px 'Cookie', cursive;
         object-position: center;
         margin-top: 17em;
         background-color: rgba(0, 0, 0, .3);
+        padding-bottom: 10px;
     }
     #headerText h2 {
         color: aliceblue;
@@ -649,7 +670,16 @@ font: normal 40px 'Cookie', cursive;
     }
     #headerText {
         object-position: center;
-        margin-top: 60%;
+        margin-top: 10em;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    #headerText h2 {
+        color: aliceblue;
+        font-size: 20px;
+    }
+    #headerText p {
+        color: aliceblue;
+        font-size: 15px;
     }
     .sidenav {
         margin-top: 0%;
