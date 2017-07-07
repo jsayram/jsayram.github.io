@@ -20,7 +20,7 @@ Hide NavBar up in scrolling up*/
     /*    display: block;*/
     float: left;
     /*    height: auto;*/
-    /*    margin-right: -10px;*/
+    margin-right: .2em;
     padding-top: 15px;
     width: 50px;
 }
@@ -264,7 +264,7 @@ header {
 #headerText {
     object-position: center;
     margin-top: 25em;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .5);
     font-family: 'Fira Sans', sans-serif;
     font-weight: 100;
     padding-bottom: 10px;
@@ -330,7 +330,7 @@ header {
 }
 
 
-/*---------------BODY-------------*/
+/*---------------BODY-------------------------------------------------------------------------*/
 
 body {
     background-color: #111;
@@ -453,7 +453,7 @@ font: normal 40px 'Cookie', cursive;
 /*************End of Body CSS*********/
 
 
-/*---------FOOTER-----------------*/
+/*-------------------------------------FOOTER--------------------------------*/
 
 .footer-distributed {
     background-color: #080705;
@@ -640,7 +640,7 @@ font: normal 40px 'Cookie', cursive;
     .navbar-brand {
         color: #912f40;
         float: left;
-        padding-left: .8em;
+        padding-left: .9em;
         padding-top: 1.8em;
     }
     header {
@@ -658,7 +658,7 @@ font: normal 40px 'Cookie', cursive;
     #headerText {
         object-position: center;
         margin-top: 20em;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .4);
     }
     #headerText h2 {
         color: aliceblue;
@@ -672,17 +672,17 @@ font: normal 40px 'Cookie', cursive;
 
 @media only screen and (max-width: 768px) {
     .navbar-brand-logo>img {
-        /*    display: block;*/
+        display: block;
         float: left;
-        /*    height: auto;*/
-        margin-right: .1em;
+        height: auto;
+        margin-right: 0em;
         padding-top: 15px;
         width: 35px;
     }
     .navbar-brand {
         color: #702632;
         float: left;
-        padding-left: .1em;
+        padding-left: .9em;
         padding-top: 1.3em;
     }
     .navbar-brand span {
@@ -726,7 +726,7 @@ font: normal 40px 'Cookie', cursive;
     #headerText {
         object-position: center;
         margin-top: 12em;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .4);
         padding-bottom: 10px;
     }
     #headerText h2 {
@@ -744,19 +744,19 @@ font: normal 40px 'Cookie', cursive;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .navbar-brand-logo>img {
         /*    display: block;*/
         float: left;
         /*    height: auto;*/
-        margin-right: .1em;
+        margin-right: 0em;
         padding-top: 15px;
         width: 35px;
     }
     .navbar-brand {
         color: #702632;
         float: left;
-        padding-left: -.1em;
+        padding-left: .1em;
         padding-top: 1.4em;
     }
     header {
@@ -774,7 +774,54 @@ font: normal 40px 'Cookie', cursive;
     #headerText {
         object-position: center;
         margin-top: 15em;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .4);
+        padding-bottom: 10px;
+    }
+    #headerText h2 {
+        color: aliceblue;
+        font-size: 25px;
+    }
+    #headerText p {
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .middleButton1,
+    .middleButton2 {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-brand-logo>img {
+        /*    display: block;*/
+        float: left;
+        /*    height: auto;*/
+        margin-right: 0em;
+        padding-top: 15px;
+        width: 35px;
+    }
+    .navbar-brand {
+        color: #702632;
+        float: left;
+        padding-left: .1em;
+        padding-top: 1.4em;
+    }
+    header {
+        background: #101010;
+        max-width: 100%;
+        max-height: auto;
+        height: 660px;
+        width: auto;
+        overflow-x: hidden;
+        position: static;
+        background: url(../images/desk_compu_long2_low.jpg)no-repeat;
+        background-size: 110%, auto;
+        background-position: top;
+    }
+    #headerText {
+        object-position: center;
+        margin-top: 15em;
+        background-color: rgba(0, 0, 0, .4);
         padding-bottom: 10px;
     }
     #headerText h2 {
@@ -816,7 +863,7 @@ font: normal 40px 'Cookie', cursive;
     #headerText {
         object-position: center;
         margin-top: 10em;
-        background-color: rgba(0, 0, 0, .3);
+        background-color: rgba(0, 0, 0, .4);
     }
     #headerText h2 {
         color: aliceblue;
@@ -888,8 +935,8 @@ font: normal 40px 'Cookie', cursive;
     .navbar-brand {
         color: #702632;
         float: left;
-        padding-left: 0.8em;
-        padding-top: 1.8em;
+        padding-left: 0.3em;
+        padding-top: 1.4em;
     }
     header {
         background: #101010;
