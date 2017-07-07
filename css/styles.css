@@ -99,8 +99,6 @@ a#envelopeL:hover {
 
 /*Collapsed menu Button*/
 
-
-/*
 button span {
     background-color: #fffffa;
     margin-top: 10px;
@@ -109,12 +107,14 @@ button span {
 button:hover {
     cursor: pointer;
 }
-*/
 
 
 /*button that opens the side navgation menu with X animation*/
 
-#nav-icon2 {}
+#nav-icon2 {
+    /*    border: 10px solid transparent;*/
+    display: block;
+}
 
 #nav-icon2 span {
     display: block;
@@ -131,16 +131,20 @@ button:hover {
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
+    margin: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
 }
 
 #nav-icon2 span:nth-child(even) {
     left: 50%;
-    border-radius: 0 30px 30px 0px;
+    border-radius: 0px 0px 0px 0px;
 }
 
 #nav-icon2 span:nth-child(odd) {
     left: 0px;
-    border-radius: 9px 0 0 9px;
+    border-radius: 0px 0px 0 0px;
 }
 
 #nav-icon2 span:nth-child(1),
@@ -156,6 +160,19 @@ button:hover {
 #nav-icon2 span:nth-child(5),
 #nav-icon2 span:nth-child(6) {
     top: 18px;
+}
+
+
+/*transparent child to increase the clickable surface area*/
+
+#nav-icon2 span:nth-child(7) {
+    padding-left: 10px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+    padding-top: 35px;
+    top: -20px;
+    left: -20px;
+    opacity: 0;
 }
 
 #nav-icon2.open span:nth-child(1),
@@ -175,20 +192,27 @@ button:hover {
 }
 
 #nav-icon2.open span:nth-child(1) {
-    left: -4px;
-    top: 3.3px;
-    width: 14px;
+    left: 3px;
+    top: 20px;
+    width: 2px;
+    height: 1px;
+    opacity: 1;
 }
 
 #nav-icon2.open span:nth-child(2) {
     left: calc(50% + 6px);
     top: 3.1px;
     width: 12px;
+    opacity: 0;
 }
 
 #nav-icon2.open span:nth-child(3) {
     left: -50%;
     opacity: 0;
+    width: 20px;
+    height: 10px;
+    top: 0px;
+    padding-top: 0px;
 }
 
 #nav-icon2.open span:nth-child(4) {
@@ -199,26 +223,26 @@ button:hover {
 #nav-icon2.open span:nth-child(5) {
     left: -5px;
     top: 15px;
-    width: 30px;
+    width: 35px;
 }
 
 #nav-icon2.open span:nth-child(6) {
-    left: calc(50% - 10px);
-    top: 15px;
-    width: 30px;
+    left: calc(50% - 16px);
+    top: 16px;
+    width: 36px;
 }
 
 .navbar-toggle {
     position: relative;
     float: right;
     padding: 9px 10px;
-    margin-top: 15px;
-    margin-right: 33px;
+    margin-top: 0px;
+    margin-right: 30px;
     margin-bottom: 3px;
     background-color: transparent;
     background-image: none;
-    border: 1px solid transparent;
-    border-radius: 20px;
+    border: 15px solid transparent;
+    border-radius: 10px, 10px;
 }
 
 
