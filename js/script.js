@@ -159,7 +159,23 @@ $("#closeButton").click(function (e) {
     e.stopPropagation();
     $(".sidenav").toggleClass("active");
 });
-$("#buttonNav").click(function (e) {
+
+/*this is the side navigation menu*/
+$("#mySideNav").click(function (e) {
+    e.stopPropagation();
+    if ($("#mySidenav").hasClass("active")) {
+        document.getElementById("mySidenav").style.width = "0";
+        closeNav();
+    } else {
+        document.getElementById("mySidenav").style.width = navOpenBig;
+        openNav();
+    }
+    $('.sidenav').toggleClass("active");
+});
+
+
+/*this toggles the collapsed navigation button and toggles the sidenav*/
+$("#buttonNav,#nav-icon2").click(function (e) {
     e.stopPropagation();
     if ($("#mySidenav").hasClass("active")) {
         document.getElementById("mySidenav").style.width = "0";
@@ -169,14 +185,25 @@ $("#buttonNav").click(function (e) {
         document.getElementById("mySidenav").style.width = navOpenBig;
         openNav();
     }
-
     $('.sidenav').toggleClass("active");
 });
 
+
+/*If the user pressed anywhere else after the sidebar has opened it will close it*/
 $(document).click(function () {
     if ($("#mySidenav").hasClass("active")) {
         document.getElementById("mySidenav").style.width = "0";
         closeNav();
         $(".sidenav").removeClass("active");
+        $("#nav-icon2").removeClass('open'); /*turns the = button to x*/
+
     }
+});
+
+/*This toggles the collapsed button menu button to X and back to = */
+
+$(document).ready(function () {
+    $('#nav-icon2').click(function () {
+        $(this).toggleClass('open');
+    });
 });

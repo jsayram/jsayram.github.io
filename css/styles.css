@@ -96,6 +96,11 @@ a#envelopeL:hover {
     width: 100%;
 }
 
+
+/*Collapsed menu Button*/
+
+
+/*
 button span {
     background-color: #fffffa;
     margin-top: 10px;
@@ -104,13 +109,120 @@ button span {
 button:hover {
     cursor: pointer;
 }
+*/
 
-.overlay {
-    background: rgba(0, 0, 0, .2);
-    overflow: hidden;
-    height: 100%;
-    z-index: 2;
+
+/*button that opens the side navgation menu with X animation*/
+
+#nav-icon2 {}
+
+#nav-icon2 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    background: #fffffa;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
+
+#nav-icon2 span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 30px 30px 0px;
+}
+
+#nav-icon2 span:nth-child(odd) {
+    left: 0px;
+    border-radius: 9px 0 0 9px;
+}
+
+#nav-icon2 span:nth-child(1),
+#nav-icon2 span:nth-child(2) {
+    top: 0px;
+}
+
+#nav-icon2 span:nth-child(3),
+#nav-icon2 span:nth-child(4) {
+    top: 9px;
+}
+
+#nav-icon2 span:nth-child(5),
+#nav-icon2 span:nth-child(6) {
+    top: 18px;
+}
+
+#nav-icon2.open span:nth-child(1),
+#nav-icon2.open span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon2.open span:nth-child(2),
+#nav-icon2.open span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon2.open span:nth-child(1) {
+    left: -4px;
+    top: 3.3px;
+    width: 14px;
+}
+
+#nav-icon2.open span:nth-child(2) {
+    left: calc(50% + 6px);
+    top: 3.1px;
+    width: 12px;
+}
+
+#nav-icon2.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(5) {
+    left: -5px;
+    top: 15px;
+    width: 30px;
+}
+
+#nav-icon2.open span:nth-child(6) {
+    left: calc(50% - 10px);
+    top: 15px;
+    width: 30px;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 15px;
+    margin-right: 33px;
+    margin-bottom: 3px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+
+/*END of Collaped = to X navigation button that opens the side bar */
 
 header {
     width: 100%;
@@ -537,14 +649,14 @@ font: normal 40px 'Cookie', cursive;
         /*    display: block;*/
         float: left;
         /*    height: auto;*/
-        /*    margin-right: -10px;*/
+        margin-right: .1em;
         padding-top: 15px;
         width: 35px;
     }
     .navbar-brand {
         color: #702632;
         float: left;
-        padding-left: .2em;
+        padding-left: .1em;
         padding-top: 1.3em;
     }
     .navbar-brand span {
@@ -607,14 +719,20 @@ font: normal 40px 'Cookie', cursive;
 }
 
 @media only screen and (max-width: 480px) {
-    /*
+    .navbar-brand-logo>img {
+        /*    display: block;*/
+        float: left;
+        /*    height: auto;*/
+        margin-right: .1em;
+        padding-top: 15px;
+        width: 35px;
+    }
     .navbar-brand {
         color: #702632;
         float: left;
-        padding-left: .2em;
-        padding-top: 1.8em;
+        padding-left: -.1em;
+        padding-top: 1.4em;
     }
-*/
     header {
         background: #101010;
         max-width: 100%;
@@ -629,7 +747,7 @@ font: normal 40px 'Cookie', cursive;
     }
     #headerText {
         object-position: center;
-        margin-top: 17em;
+        margin-top: 15em;
         background-color: rgba(0, 0, 0, .3);
         padding-bottom: 10px;
     }
@@ -744,7 +862,7 @@ font: normal 40px 'Cookie', cursive;
     .navbar-brand {
         color: #702632;
         float: left;
-        padding-left: 0.2em;
+        padding-left: 0.8em;
         padding-top: 1.8em;
     }
     header {
@@ -754,7 +872,7 @@ font: normal 40px 'Cookie', cursive;
         overflow-x: hidden;
         height: 414px;
         position: static;
-        background: url(../images/desk_compu_long2_low.jpg) no-repeat;
+        background: url(../images/desk_compu_short2_low.jpg) no-repeat;
         background-size: 100%, auto;
         background-position: center;
     }
@@ -774,6 +892,19 @@ font: normal 40px 'Cookie', cursive;
         font-weight: 100;
         line-height: 10px;
         float: right;
+    }
+    #headerText {
+        object-position: center;
+        margin-top: 8em;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    #headerText h2 {
+        color: aliceblue;
+        font-size: 20px;
+    }
+    #headerText p {
+        color: aliceblue;
+        font-size: 15px;
     }
 }
 
