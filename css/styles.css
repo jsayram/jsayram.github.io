@@ -819,14 +819,19 @@ font: normal 40px 'Cookie', cursive;
         background-position: top;
     }
     #headerText {
+        position: static;
         object-position: center;
         margin-top: 15em;
+        background: none;
         background-color: rgba(0, 0, 0, .4);
         padding-bottom: 10px;
     }
     #headerText h2 {
-        color: aliceblue;
+        color: black;
+        color: #fffffa;
+        background-color: rgba(139, 0, 0, .3);
         font-size: 25px;
+        font-style: italic;
     }
     #headerText p {
         color: aliceblue;
