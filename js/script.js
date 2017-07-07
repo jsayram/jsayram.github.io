@@ -2,8 +2,8 @@
 var navOpenBig = '100px';
 var navOpenSmall = '90px';
 var navOpenXSmall = '50px';
-var overlayLight = 'rgba(0, 0, 0, .1)';
-var overlayDark = 'rgba(0, 0, 0, .2)';
+var overlayLight = 'rgba(0, 0, 0, 0)';
+var overlayDark = 'rgba(0, 0, 0, 0)';
 
 function openNav() {
     if ($(window).width() <= 321) {
