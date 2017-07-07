@@ -196,7 +196,7 @@ button:hover {
     top: 20px;
     width: 2px;
     height: 1px;
-    opacity: 1;
+    opacity: 0;
 }
 
 #nav-icon2.open span:nth-child(2) {
