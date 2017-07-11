@@ -10,8 +10,7 @@ function openNav() {
 
         document.getElementById("mySidenav").style.width = navOpenSmall;
         document.getElementById('main').style.marginLeft = navOpenSmall;
-
-        //        document.getElementById('headerText').style.marginLeft = navOpenSmall;
+        //document.getElementById('headerText').style.marginLeft = navOpenSmall;
         document.getElementById('name').style.display = 'none';
         document.getElementById('logo').style.display = 'block';
         document.getElementById('overlay').style.backgroundColor = overlayLight;
@@ -37,9 +36,18 @@ function openNav() {
         document.getElementById('main').style.marginLeft = navOpenBig;
         document.getElementById('overlay').style.backgroundColor = overlayLight;
     }
-    document.getElementById('headerText').style.display = 'none';
+    if ($(window).height() <= 415) {
 
+        document.getElementById("mySidenav").style.width = '70px';
+        document.getElementById('main').style.marginLeft = navOpenSmall;
+        //document.getElementById('headerText').style.marginLeft = navOpenSmall;
+        document.getElementById('name').style.display = 'none';
+        document.getElementById('logo').style.display = 'block';
+        document.getElementById('overlay').style.backgroundColor = overlayLight;
+    }
+    document.getElementById('headerText').style.display = 'none';
 }
+
 
 function closeNav() {
     if ($(window).width() <= 320) {
@@ -111,9 +119,6 @@ $('a[href*="#"]')
         }
     });
 
-
-
-
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -149,7 +154,6 @@ function hasScrolled() {
             $('.navbar-fixed-bottom, .navbar-fixed-top').removeClass('nav-up').addClass('nav-down');
         }
     }
-
     lastScrollTop = st;
 }
 
