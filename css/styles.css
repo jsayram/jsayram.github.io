@@ -393,26 +393,46 @@ body {
 #about p {
     background-color: #fffffa;
     color: #080705;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
-    margin-left: 10%;
-    margin-right: 10%;
+    /*    margin-left: %;*/
+    /*    margin-right: 5%;*/
 }
 
 #aboutImage {
-    width: 304px;
-    height: 228px;
+    content: none;
+    width: 480px;
+    /*    height: 720px;*/
     object-position: center;
 }
 
 #skills {
     background-color: #40434e;
     color: #fffffa;
-    font-size: 12px;
+    font-size: 18px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
+}
+
+#skills p {
+    background-color: #40434e;
+    color: #fffffa;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.logo {
+    font-size: 100px;
+}
+
+.logoSm {
+    font-size: 50px;
 }
 
 #faq {
