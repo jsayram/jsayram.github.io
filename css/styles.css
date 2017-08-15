@@ -401,6 +401,12 @@ body {
     margin-right: 10%;
 }
 
+#aboutImage {
+    width: 304px;
+    height: 228px;
+    object-position: center;
+}
+
 #skills {
     background-color: #40434e;
     color: #fffffa;
@@ -854,8 +860,8 @@ font: normal 40px 'Cookie', cursive;
         overflow-x: hidden;
         position: static;
         background: url(../images/desk_compu_long2_low.jpg)no-repeat;
-        background-size: 110%, auto;
-        background-position: -9px;
+        background-size: 118%, auto;
+        background-position: -15px;
     }
     #headerText {
         position: static;
@@ -922,6 +928,17 @@ font: normal 40px 'Cookie', cursive;
         top: 0;
         left: 0;
         background-color: rgba(0, 0, 0, .5);
+        /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+        /* For Firefox 3.6 to 15 */
+        /*    background: linear-gradient(red, yellow);*/
+        background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+        /* Standard syntax (must be last) */
+        border: none;
         overflow-x: hidden;
         -webkit-transition: 0.2s;
         transition: 0.2s;
