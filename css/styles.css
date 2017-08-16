@@ -406,6 +406,7 @@ body {
     width: 360px;
     /*    height: 720px;*/
     object-position: center;
+    /*    padding-top: 10%;*/
 }
 
 #skills {
@@ -475,6 +476,13 @@ body {
 }
 
 #faq {
+    background-color: #111;
+    color: #fffffa;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+}
+
+h5 {
     background-color: #111;
     color: #fffffa;
     font-family: 'Fira Sans', sans-serif;
@@ -564,7 +572,7 @@ font: normal 40px 'Cookie', cursive;
 /*-------------------------------------FOOTER--------------------------------*/
 
 .footer-distributed {
-    background-color: #080705;
+    background-color: #40434e;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -611,6 +619,17 @@ font: normal 40px 'Cookie', cursive;
     line-height: 1.8;
     text-decoration: none;
     color: inherit;
+    font-size: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+}
+
+.footer-distributed .footer-links a:hover {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: underline;
+    color: inherit;
+    font-size: 15px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
 }
@@ -626,7 +645,7 @@ font: normal 40px 'Cookie', cursive;
 /* Footer social icons */
 
 .footer-distributed .footer-icons {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .footer-distributed .footer-icons a {
@@ -634,6 +653,7 @@ font: normal 40px 'Cookie', cursive;
     width: 35px;
     height: 35px;
     cursor: pointer;
+    /*    background-color:#912f40;*/
     background-color: #33383b;
     border-radius: 2px;
     font-size: 20px;
@@ -646,6 +666,10 @@ font: normal 40px 'Cookie', cursive;
 
 .footer-distributed .footer-icons a:hover {
     font-size: 25px;
+}
+
+#follow {
+    color: #fffffa;
 }
 
 
