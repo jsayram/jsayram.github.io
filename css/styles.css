@@ -403,7 +403,7 @@ body {
 
 #aboutImage {
     content: none;
-    width: 480px;
+    width: 360px;
     /*    height: 720px;*/
     object-position: center;
 }
@@ -411,9 +411,10 @@ body {
 #skills {
     background-color: #40434e;
     color: #fffffa;
-    font-size: 18px;
+    /*    font-size: 18px;*/
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
+    margin: none;
 }
 
 #skills p {
@@ -427,12 +428,50 @@ body {
     margin-right: 10%;
 }
 
+#tools {
+    background-color: #fffffa;
+    color: #fffffa;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+#tools p {
+    color: #40434e;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+#tools h2 {
+    color: #40434e;
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+#braketsImage {
+    width: 80px;
+    padding-top: 10px
+}
+
 .logo {
     font-size: 100px;
+    margin: auto;
+}
+
+#tools .logo {
+    color: #40434e;
+    font-size: 100px;
+    margin: auto;
 }
 
 .logoSm {
     font-size: 50px;
+    color: #40434e;
 }
 
 #faq {
