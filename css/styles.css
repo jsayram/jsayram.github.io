@@ -83,6 +83,15 @@ a#envelopeL:hover {
     font-weight: 200;
 }
 
+#blogIcon {
+    font-size: 15px;
+}
+
+#blogIcon:hover {
+    font-size: 20px;
+    text-decoration: none;
+}
+
 .sidebar-nav :active,
 .sidebar-nav :focus {
     text-decoration: none
@@ -666,6 +675,7 @@ font: normal 40px 'Cookie', cursive;
 
 .footer-distributed .footer-icons a:hover {
     font-size: 25px;
+    text-decoration: none;
 }
 
 #follow {
