@@ -406,6 +406,7 @@ body {
     font-style: normal;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
+    text-align: left;
     /*    margin-left: %;*/
     /*    margin-right: 5%;*/
 }
@@ -496,10 +497,11 @@ h5 {
     color: #fffffa;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
+    text-align: left;
 }
 
 #porfolio {
-    background-color: black;
+    background-color: #fffffa;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
 }
@@ -1176,7 +1178,7 @@ iframe[seamless] {
         float: center;
     }
     #middleFoot {
-        display: none;
+        /*        display: none;*/
     }
 }
 
