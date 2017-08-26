@@ -393,7 +393,7 @@ body {
 #about {
     background-color: #fffffa;
     color: #080705;
-    font-size: 12px;
+    font-size: 18px;
     font-style: normal;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
@@ -402,7 +402,7 @@ body {
 #about p {
     background-color: #fffffa;
     color: #080705;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
@@ -411,13 +411,16 @@ body {
     /*    margin-right: 5%;*/
 }
 
+/*this one is used for smaller screens sizes*/
+
+
 #aboutImage {
-    content: none;
-    width: 360px;
-    /*    height: 720px;*/
-    object-position: center;
-    /*    padding-top: 10%;*/
+/*    display:none;*/
+    width: 90%;
+    height: auto;
+
 }
+
 
 #skills {
     background-color: #40434e;
@@ -453,7 +456,7 @@ body {
     font-size: 18px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
-    text-align: center;
+/*    text-align: center;*/
 }
 
 #tools h2 {
@@ -471,18 +474,25 @@ body {
 
 .logo {
     font-size: 100px;
-    margin: auto;
+/*    margin: auto;*/
 }
 
 #tools .logo {
     color: #40434e;
     font-size: 100px;
-    margin: auto;
+/*    margin: auto;*/
+    margin:-7px
 }
 
 .logoSm {
     font-size: 50px;
     color: #40434e;
+    margin:-14px;
+}
+
+/*helps make sure there is no gap on the right of the screen, by aligning the logos better*/
+div#tools.row , div#skills.row{
+    padding-right:13px;
 }
 
 #faq {
@@ -824,6 +834,12 @@ iframe[seamless] {
         color: aliceblue;
         font-size: 50px;
     }
+    #aboutImage{
+        width: 100%;
+    }
+    #about p {
+        font-size:18px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -892,6 +908,14 @@ iframe[seamless] {
         border: 1px solid #fffffa;
         font-size: 2em;
     }
+
+    #aboutImage{
+        width: 100%;
+    }
+    #about p {
+        font-size:18px;
+     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -939,6 +963,8 @@ iframe[seamless] {
     .middleButton2 {
         font-size: 1em;
     }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -987,6 +1013,13 @@ iframe[seamless] {
     .middleButton2 {
         font-size: 1em;
     }
+    #aboutImage{
+        width: 100%;
+    }
+    #aboutText p{
+        font-size: 12px;
+    }
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -1069,6 +1102,7 @@ iframe[seamless] {
     body {
         background-color: #101010;
     }
+
 }
 
 @media screen and (max-height: 450px) {
@@ -1181,6 +1215,5 @@ iframe[seamless] {
         /*        display: none;*/
     }
 }
-
 
 /*End of Media Query CSS*/
