@@ -105,14 +105,14 @@ a#envelopeL:hover {
     z-index: 1030;
     background-color: rgba(0, 0, 0, .5);
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3));
     /* For Firefox 3.6 to 15 */
     /*    background: linear-gradient(red, yellow);*/
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3));
     /* Standard syntax (must be last) */
     border: none;
     height: 70px;
@@ -291,16 +291,16 @@ header {
     margin-top: 25em;
     margin-left: 15%;
     margin-right: 15%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .8);
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
     /* For Firefox 3.6 to 15 */
     /*    background: linear-gradient(red, yellow);*/
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
     /* Standard syntax (must be last) */
     border: none;
     font-family: 'Fira Sans', sans-serif;
@@ -529,14 +529,14 @@ h5 {
     left: 0;
     background-color: rgba(0, 0, 0, .5);
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .3));
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .3));
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .3));
     /* For Firefox 3.6 to 15 */
     /*    background: linear-gradient(red, yellow);*/
-    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .3));
     /* Standard syntax (must be last) */
     border: none;
     overflow-x: hidden;
@@ -554,7 +554,7 @@ h5 {
 .sidenav a {
     padding: 8px 8px 8px 60px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #fffffa;
     display: block;
     -webkit-transition: 0.3s;
@@ -628,12 +628,18 @@ iframe[seamless] {
 
 .footer-distributed h3 {
     color: #fffffa;
-    font: normal 36px 'Cookie', cursive;
+/*    font-family: 'Fira Sans', sans-serif;*/
+    font-size: 40px;
+    font: normal 36px 'fira sanss', cursive;
     margin: 0 0 10px;
 }
 
+#lastFoot h3{
+   font-size:30px;
+
+}
 .footer-distributed h3 span {
-    color: #912f40;
+    color: black;
 }
 
 
@@ -1124,6 +1130,10 @@ iframe[seamless] {
         font-weight: 100;
         line-height: 15px;
         float: right;
+    }
+    #aboutImage{
+/*        display:none;*/
+        width:50%;
     }
 }
 
