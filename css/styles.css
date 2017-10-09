@@ -41,6 +41,10 @@ Hide NavBar up in scrolling up*/
 }
 
 .navbar-brand span:hover {
+    transition-duration: .5s;
+    /* delays for 1 second */
+    -webkit-transition-duration: .5s;
+    /* for Safari & Chrome */
     color: #fffffa;
     font: normal 1px 'Cookie', cursive;
     font-size: 26px;
@@ -57,6 +61,10 @@ Hide NavBar up in scrolling up*/
 }
 
 #myNavbar a:hover {
+    transition-duration: .5s;
+    /* delays for 1 second */
+    -webkit-transition-duration: .5s;
+    /* for Safari & Chrome */
     color: #fffffa;
     background: transparent;
     border: 2px solid;
@@ -76,6 +84,10 @@ a#envelopeL {
 }
 
 a#envelopeL:hover {
+    transition-duration: .5s;
+    /* delays for 1 second */
+    -webkit-transition-duration: .5s;
+    /* for Safari & Chrome */
     color: #fffffa;
     font-size: 40px;
     font-family: 'Fira Sans', sans-serif;
@@ -354,6 +366,10 @@ header {
 }
 
 .middleButton1:hover {
+    transition-duration: .5s;
+    /* delays for 1 second */
+    -webkit-transition-duration: .5s;
+    /* for Safari & Chrome */
     background-color: #fffffa;
     color: #40434e;
     border: 3px solid #fffffa;
@@ -362,6 +378,10 @@ header {
 }
 
 .middleButton2:hover {
+    transition-duration: .5s;
+    /* delays for 1 second */
+    -webkit-transition-duration: .5s;
+    /* for Safari & Chrome */
     /*    background-color: #fffffa;*/
     color: #fffffa;
     border: 5px solid #fffffa;
@@ -377,6 +397,49 @@ body {
     /*       font-size: 15px;*/
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
+}
+
+.MainContent {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.MainContentAbout {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.MainContentSkills {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.MainContentTools {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.MainContentProjects {
+    max-width: 1200px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.MainContentFAQ {
+    max-width: 1500px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.MainContentFooter {
+    max-width: 1500px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -407,20 +470,20 @@ body {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
     text-align: left;
-    /*    margin-left: %;*/
+    /*    margin-left: %;
     /*    margin-right: 5%;*/
 }
 
+
 /*this one is used for smaller screens sizes*/
 
-
 #aboutImage {
-/*    display:none;*/
+    display: inline-block;
+    position: center;
     width: 90%;
     height: auto;
-
+    max-width: 700px;
 }
-
 
 #skills {
     background-color: #40434e;
@@ -428,7 +491,7 @@ body {
     /*    font-size: 18px;*/
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
-    margin: none;
+    /*margin: none;*/
 }
 
 #skills p {
@@ -456,7 +519,7 @@ body {
     font-size: 18px;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
-/*    text-align: center;*/
+    /*    text-align: center;*/
 }
 
 #tools h2 {
@@ -468,31 +531,34 @@ body {
 }
 
 #braketsImage {
-    width: 80px;
+    width: 75px;
     padding-top: 10px
 }
 
 .logo {
-    font-size: 100px;
-/*    margin: auto;*/
+    font-size: 95px;
+    /*    margin: auto;*/
 }
 
 #tools .logo {
     color: #40434e;
-    font-size: 100px;
-/*    margin: auto;*/
-    margin:-7px
+    font-size: 95px;
+    /*    margin: auto;*/
+    /*margin: ;*/
 }
 
 .logoSm {
     font-size: 50px;
     color: #40434e;
-    margin:-14px;
+    /*margin: -14px;*/
 }
 
+
 /*helps make sure there is no gap on the right of the screen, by aligning the logos better*/
-div#tools.row , div#skills.row{
-    padding-right:13px;
+
+div#tools.row,
+div#skills.row {
+    /*padding-right: 13px;*/
 }
 
 #faq {
@@ -510,11 +576,182 @@ h5 {
     text-align: left;
 }
 
-#porfolio {
+
+/*---------------------------PROJECTS--------------------------------*/
+
+.jm-item {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.jm-item-wrapper {
+    position: relative;
+    padding: 7px;
+    background: #40434e;
+}
+
+.jm-item-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.jm-item-image img {
+    display: block;
+    width: 100%
+}
+
+.jm-item-image img:hover {
+    display: block;
+    width: 100%;
+}
+
+.jm-item-title {
+    position: absolute;
+    left: -10px;
+    bottom: 17px;
+    background: rgba(0, 0, 0, .9);
+    line-height: 1.5em;
+    font-weight: normal;
+    padding: 7px 9px 6px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.4em;
+}
+
+.jm-item-overlay {
+    background: #000;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transition: opacity 0.5s ease-in 0s;
+    -moz-transition: opacity 0.5s ease-in 0s;
+    -o-transition: opacity 0.5s ease-in 0s;
+    transition: opacity 0.5s ease-in 0s;
+}
+
+.jm-item-wrapper:hover .jm-item-overlay {
+    opacity: 0.3;
+}
+
+.jm-item-button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font: center;
+    content: center;
+    text-align: center;
+    align-content: center;
+    padding-top: 5em;
+}
+
+.inDes {
+    /*    background-color: rgba(0, 0, 0, .4);*/
+    color: #fffffa;
+    /*    border: 2px solid #fffffa;*/
+    /*    border-radius: 50px 50px 50px 50px;*/
+    /*    margin: 2em;*/
+    font-size: 1.1em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.jm-item-button a {
+    background-color: rgba(0, 0, 0, .4);
+    color: #fffffa;
+    border: 2px solid #fffffa;
+    /*    border-radius: 50px 50px 50px 50px;*/
+    margin: 2em;
+    font-size: 1.4em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.jm-item-button a:hover {
+    transition-duration: .5s;
+    /* delays for 1 second */
+    -webkit-transition-duration: .5s;
+    /* for Safari & Chrome */
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+    border: 2px solid #fffffa;
+    /*    border-radius: 50px 50px 50px 50px;*/
+    margin: 2em;
+    font-size: 1.4em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /*    background: #3b3b3b;*/
+}
+
+.second .jm-item-wrapper .jm-item-title {
+    -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+}
+
+.second .jm-item-wrapper:hover .jm-item-title {
+    display: none;
+    left: -10%;
+}
+
+.second .jm-item-description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    top: 100%;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -moz-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+
+.second .jm-item-wrapper:hover .jm-item-description {
+    top: 0;
+}
+
+#projects {
+    /*position: relative;*/
     background-color: #fffffa;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 200;
+    /*margin: 5%;*/
 }
+
+
+/*---------------------------END Projects-----------------------------------------*/
 
 
 /*Side Navigation*/
@@ -628,16 +865,16 @@ iframe[seamless] {
 
 .footer-distributed h3 {
     color: #fffffa;
-/*    font-family: 'Fira Sans', sans-serif;*/
+    /*    font-family: 'Fira Sans', sans-serif;*/
     font-size: 40px;
     font: normal 36px 'fira sanss', cursive;
     margin: 0 0 10px;
 }
 
-#lastFoot h3{
-   font-size:30px;
-
+#lastFoot h3 {
+    font-size: 30px;
 }
+
 .footer-distributed h3 span {
     color: black;
 }
@@ -840,11 +1077,12 @@ iframe[seamless] {
         color: aliceblue;
         font-size: 50px;
     }
-    #aboutImage{
+    #aboutImage {
         width: 100%;
+        max-width: 700px;
     }
     #about p {
-        font-size:18px;
+        font-size: 18px;
     }
 }
 
@@ -914,14 +1152,13 @@ iframe[seamless] {
         border: 1px solid #fffffa;
         font-size: 2em;
     }
-
-    #aboutImage{
+    #aboutImage {
         width: 100%;
+        max-width: 700px;
     }
     #about p {
-        font-size:18px;
-     }
-
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -969,8 +1206,49 @@ iframe[seamless] {
     .middleButton2 {
         font-size: 1em;
     }
-
-
+    /*Takes margins off for main content divs for smaller screeens*/
+    .MainContent {
+        margin: 0;
+    }
+    .MainContentAbout {
+        margin: 0;
+    }
+    .MainContentSkills {
+        margin: 0;
+    }
+    .MainContentTools {
+        margin: 0;
+    }
+    .MainContentProjects {
+        margin: 0;
+    }
+    .MainContentFAQ {
+        margin: 0;
+    }
+    .MainContentFooter {
+        margin: 0;
+    }
+    .second .jm-item-wrapper:hover .jm-item-title {
+        left: -100%;
+        display: block;
+    }
+    .inDes {
+        /*    background-color: rgba(0, 0, 0, .4);*/
+        color: #fffffa;
+        /*    border: 2px solid #fffffa;*/
+        /*    border-radius: 50px 50px 50px 50px;*/
+        /*    margin: 2em;*/
+        font-size: .8em;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 100;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        /*        font-weight: bold;*/
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1019,13 +1297,12 @@ iframe[seamless] {
     .middleButton2 {
         font-size: 1em;
     }
-    #aboutImage{
+    #aboutImage {
         width: 100%;
     }
-    #aboutText p{
+    #aboutText p {
         font-size: 12px;
     }
-
 }
 
 @media only screen and (max-width: 320px) {
@@ -1108,7 +1385,23 @@ iframe[seamless] {
     body {
         background-color: #101010;
     }
-
+    .inDes {
+        /*    background-color: rgba(0, 0, 0, .4);*/
+        color: #fffffa;
+        /*    border: 2px solid #fffffa;*/
+        /*    border-radius: 50px 50px 50px 50px;*/
+        /*    margin: 2em;*/
+        font-size: .7em;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 100;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 3px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        /*        font-weight: bold;*/
+        /*        margin-bottom: 20px;*/
+    }
 }
 
 @media screen and (max-height: 450px) {
@@ -1131,9 +1424,9 @@ iframe[seamless] {
         line-height: 15px;
         float: right;
     }
-    #aboutImage{
-/*        display:none;*/
-        width:50%;
+    #aboutImage {
+        /*        display:none;*/
+        width: 50%;
     }
 }
 
@@ -1225,5 +1518,6 @@ iframe[seamless] {
         /*        display: none;*/
     }
 }
+
 
 /*End of Media Query CSS*/

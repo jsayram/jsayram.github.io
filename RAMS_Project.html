@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Jose, Ramirez, Computer, Software,web developer,VCU,Ramirez ,Villa,Java,HTML,C++, css,python,javascript,developer,Engineering,technology.">
+    <meta name="author" content="Jose Ramirez-Villa">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+
+    <!-- THIS IS THE Apropriate css file for page  -->
+    <link rel="stylesheet" href="css/styles_RAMS_project.css">
+    <link rel="Shortcut Icon" href="favicon.ico?">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200,400|Fira+Sans:300" rel="stylesheet">
+    <title>RAMS Project</title>
+</head>
+<header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div id="overlay" class="overlay">
+        <nav class="navbar navbar-fixed-top transparent-header" role="navigation">
+            <div class="container-fluid class ">
+                <!-- Add all page content inside this div if you want the side nav to push page content to the right
+                    (not used if you only want the sidenav to sit on top of the page -->
+                <!-- logo JRV -->
+                <div id="main" class="navbar-left">
+                    <a id="logo" class="navbar-brand-logo " href="index.html"><img style="max-width:80px; " src="images/jrlogo.png"></a>
+                </div>
+                <!--Name shown at the top of the website Jose Ramirez-Villa-->
+                <a class="navbar-brand" href="index.html" id="name"><span></span></a>
+                <!--this is constains the button that will toggle the side navigation bar-->
+                <div class="navbar-header pull-right">
+                    <!-- button will show when the navbar collapses to a specified size ie: mobilephone screen-->
+                    <button id="buttonNav" type="button" class="toggle more navbar-toggle" data-toggle="menu-toggle" data-target="#mySidenav" onclick="openNav()">
+                        <div id="nav-icon2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!--
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        -->
+                    </button>
+                </div>
+                <!-- SIDE NAVIGATION this will open when collpased button shows on the main menu -->
+                <div id="mySidenav" class="sidenav">
+                    <!--                    <a id="closeButton" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <br>
+                    <ul class="list-unstyled">
+                        <li><a id="homeL" href="index.html">Home</a></li>
+                        <li><a id="aboutL" href="index.html#about">About</a></li>
+                        <li><a id="skillsL" href="index.html#skills">Skills</a></li>
+                        <li><a id="projectsL" href="index.html#projects">Projects</a></li>
+                        <!--                        <li><a id="faqL" href="index.html#faq">Q&amp;A</a></li>-->
+                        <a href="https://joseramirezvilla.wordpress.com/">Blog</a>
+                    </ul>
+                    <div class="footer-icons">
+                        <a href="https://www.linkedin.com/in/ramirezju17/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/jsayram"><i class="fa fa-github"></i></a>
+                        <a href="mailto:jsayram3@gmail.com?subject=&body=">
+                            <i class="fa fa-envelope-square"></i></a>
+                    </div>
+                </div>
+                <!-- main navigation items that will collapse when screen gets small -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="homeL" href="index.html">Home</a></li>
+                        <li><a id="aboutL" href="index.html#about">About</a></li>
+                        <li><a id="skillsL" href="index.html#skills">Skills</a></li>
+                        <li><a id="projectsL" href="index.html#projects">Projects</a></li>
+                        <!--                        <li><a id="faqL" href="index.html#faq">Q&amp;A</a></li>-->
+                        <li><a href="https://joseramirezvilla.wordpress.com/">Blog</a></li>
+                        <li><a id="envelopeL" href="mailto:jsayram3@gmail.com?subject=&body="><i class="fa fa-envelope-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- container -->
+        </nav>
+        <!--   STUFF ontop of the header background -->
+        <div class="container-fluid">
+            <div class="row" id="headerText">
+                <section class="page col-med-12 text-center">
+                    <h2>(R.A.M.S)<br> Remote Aerial Mapping Spectromer</h2>
+                    <div class="row">
+                        <section class="col-xs-12">
+                            <p></p>
+
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+</header>
+<!--END OF HEADER-->
+</div>
+
+<body>
+
+    <div class="container-fluid">
+        <div id="documentMenu">
+            <ul class="documentNav">
+                <li><a id="posterL" href="#abstractL">Abstract</a></li>
+                <li><a id="posterL" href="#poster">Poster</a></li>
+                <li><a id="teamL" href="#team">Team</a></li>
+                <li><a id="AwardL" href="#award">Award</a></li>
+                <li><a id="SponsorL" href="#sponsor">Sponsor</a></li>
+                <li><a id="technologyL" href="#technology">Technology</a></li>
+            </ul>
+        </div>
+        <div class="row" id="aboutTop">
+            <section class="page col-lg-12 text-center">
+
+                <div class="MainContentAboutTop">
+                    <p>
+                        <br>The Capstone Design project at the School of Engineering of Virginia Commonwealth University is meant to be the climax of every engineering student’s undergraduate education. Along the way, we gained valuable experience of working in teams, including group dynamics; dealing with conflicts, meeting time-driven deliverables and deadlines; and communication among team members, project sponsors, and faculty advisors.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="row" id="poster">
+            <div class="MainContentDataFormat">
+                <br>
+                <section class="page col-lg-12 text-center" style="margin:0;">
+
+                    <img id="data" style="max-width:1000px; margin:0;" src="images/RAMImages/expo.jpg" alt="data">
+
+                </section>
+            </div>
+        </div>
+
+
+        <div class="row" id="aboutMiddle">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentAboutMiddle">
+                    <hr>
+                    <h2 id="abstractL">Abstract</h2>
+                    <section class="col-md-6">
+                        <P>
+                            <br>According to the EPA, harmful algal blooms may occur more frequently in coastal areas like the Chesapeake Bay due to warming waters and increased nutrient pollution. Algal blooms cause aquatic dead zones which damage the ecosystem and can produce toxins which are dangerous to animals and humans. Continual environmental monitoring is required to research algal blooms and to prevent harm to resi- dents and industries
+                        </P>
+
+                    </section>
+                    <section class="col-md-6">
+
+                        <div>
+                            <img id="habs" src="images/RAMImages/habs.png" alt="habs">
+
+                        </div>
+
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="aboutMiddle">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentAboutMiddle">
+                    <hr>
+                    <P>
+                        <br> We researched technologies to locate harmful algal blooms and found spectroscopic remote surveying an effective approach. A material’s wavelength-dependent reflectance reveals its material composition. Unfortunately, existing methods which can map spectral characteristics are lacking. Field researchers with handheld spectrometers may analyze nearby vegetation’s identity and health but surveying a large area is time-consuming. Alternatively, hyperspectral cameras mounted to aircraft and satellites can gather data from a wide region but are cost prohibitive for local studies and provide limited spatial resolution.
+                    </P>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="row" id="aboutBottom">
+            <section class="page col-lg-12 text-center">
+                <h2>R.A.M.S</h2>
+                <div class="MainContentAboutBottom">
+                    <br>
+                    <section class="col-lg-6">
+                        <img id="rams" src="images/RAMImages/rams.jpg" alt="rams">
+                    </section>
+
+                    <section class="col-lg-6">
+                        <img id="display" src="images/RAMImages/display.jpg" alt="display">
+                    </section>
+                </div>
+            </section>
+        </div>
+        <div class="row" id="aboutBottom">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentAboutBottom">
+
+                    <section class="col-lg-12">
+                        <p> We designed a spectral mapping sensor payload for mounting on unmanned aerial vehicles. The Remote Aerial Mapping Spectrometer (RAMS) adapts to any aircraft able to carry its low weight because it is self-powered and includes all necessary sensors. It scans its surroundings with a laser rangefinder and spectrometer with a long-focus lens. RAMS monitors the orientation of its sensor package and computes a three-dimensional map of nearby material signatures.
+                            <br>
+                        </p>
+
+
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="poster">
+            <h2 style="text-align:center;">Exposition Poster</h2>
+            <div class="MainContentDataFormat">
+                <section class="page col-lg-12 text-center">
+
+                    <img id="data" style="max-width:1000px;" src="images/RAMImages/poster.png" alt="data">
+
+                </section>
+            </div>
+        </div>
+
+
+        <div class="row" id="technology">
+            <p>&nbsp;</p>
+            <div class="MainContentImplementation">
+                <h1 style="color:black">Technology</h1>
+                <section class="col-lg-12">
+                    <section class="col-md-4">
+                        <img src="images/RAMImages/sketchup_google.jpg" alt="Google Sketchup">
+
+                        <h3>Google Sketchup Model</h3>
+                        <br>
+                    </section>
+                    <section class="col-md-4">
+                        <img src="images/RAMImages/sketchup_render.jpg" alt="render">
+
+                        <h3>3D Render</h3>
+                        <br>
+                    </section>
+                    <section class="col-md-4">
+                        <img id="HFile" src="images/RAMImages/sketchup_3d.jpg" alt="3d">
+
+                        <h3>Final Design <br> 3D Printed</h3>
+                        <br>
+                    </section>
+                    <section class="col-xm-12">
+
+                        <p>
+                            The Sensor package consisted of a 3D printed sensor mount which cradled an<br> STS-VIS Ocean Optics Spectrometer connected to a collimating lense via a 5" custom made fiber optic cable. As well as a LIDAR-Lite 3 laser rangefinder. Chassy
+                        </p>
+                    </section>
+
+                    <section class="col-md-4">
+                        <img id="spectrometer" src="images/RAMImages/spect.png" alt="Spectrometer">
+
+                        <h3><a href="https://oceanoptics.com/product/sts-vis-microspectrometer/">Ocen Optics - STS-VIS Spectrometer</a></h3>
+
+                        <br>
+                    </section>
+                    <section class="col-md-4">
+                        <img id="lidar" src="images/RAMImages/lidar.png" alt="Spectrometer">
+
+                        <h3><a href="https://www.sparkfun.com/products/14032">LIDAR-lite V3</a></h3>
+
+                        <br>
+                    </section>
+                    <section class="col-md-4">
+                        <img id="lidar" src="images/RAMImages/pi.jpg" alt="Spectrometer">
+
+                        <h3><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">The Brains- Raspberry Pi 3B</a></h3>
+                        <br>
+                    </section>
+                    <section class="col-md-12">
+                        <img id="pbc" src="images/RAMImages/pcb.png" alt="Custom Made PCB">
+                        <h3>Custom made PCB allowed our system to be Low SWaP (Size, Weight, and Power)</h3>
+                        <br>
+                    </section>
+                </section>
+            </div>
+            <hr>
+
+        </div>
+
+
+
+
+        <!--
+        <div class="row" id="projects">
+            <section class="page col-lg-12 text-center">
+
+                <div class="MainContentProjects">
+                    <h2>Projects</h2>
+                    <section class="col-lg-4">
+                        <div class="jm-item second">
+                            <div class="jm-item-wrapper">
+                                <div class="jm-item-image">
+                                    <img src="images/Vcu_computer.JPG" alt="RAMS" />
+                                    <div class="jm-item-description">
+                                        <div class="jm-item-button">
+                                            <a href="#">View</a>
+                                            <br>
+                                            <br>
+                                            <p> Lorem ipsum dolor sit amet. 1. Lorem 2. Ipsum 3. Dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jm-item-title">Pizza Ristorante</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-lg-4">
+                        <div class="jm-item second">
+                            <div class="jm-item-wrapper">
+                                <div class="jm-item-image">
+                                    <img src="images/suit.png" alt="RAMS" />
+                                    <div class="jm-item-description">
+                                        <div class="jm-item-button">
+                                            <a href="#">View</a>
+                                            <br>
+                                            <br>
+                                            <p> Lorem ipsum dolor sit amet. 1. Lorem 2. Ipsum 3. Dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jm-item-title">Pizza Ristorante</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-lg-4">
+                        <div class="jm-item second">
+                            <div class="jm-item-wrapper">
+                                <div class="jm-item-image">
+                                    <img src="images/suit.png" alt="RAMS" />
+                                    <div class="jm-item-description">
+                                        <div class="jm-item-button">
+                                            <a href="#">View</a>
+                                            <br>
+                                            <br>
+                                            <p> Lorem ipsum dolor sit amet. 1. Lorem 2. Ipsum 3. Dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jm-item-title">Pizza Ristorante</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+-->
+
+
+        <div class="row" id="award">
+
+            <section class="page col-lg-12 text-center">
+                <h2>Sternheimer Design Award
+                </h2>
+                <div class="MainContentBottomPage">
+
+                    <section class="col-lg-6">
+                        <img id="stern" src="images/RAMImages/sternheimer.png" alt="stern">
+
+
+                    </section>
+                    <section class="col-lg-6">
+                        <p>
+                            <br>Funded by Mr. Mark Sternheimer, major benefactor and Foundation Board member a highly prestigious award given to projects xhibiting outstanding innovation and entrepreneurship. <b><a href="https://egr.vcu.edu/news-events/events/capstone-design/students/sternheimer/">(1)</a>
+                            </p></b>
+
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="sponsor">
+            <hr>
+            <section class="page col-lg-12 text-center">
+                <h2>Sponsor<br> NASA Langley Research Center
+                </h2>
+                <div class="MainContentBottomPage">
+
+                    <section class="col-lg-6">
+                        <img id="nasa" src="images/RAMImages/nasaLogo.png" alt="nasa">
+                        <p>
+                            <h3> Mentored By:<a href="https://gameon.nasa.gov/about/principal-technologist/steve-horan/#lightbox/0/"> Steve Horan</a> </h3>
+                            Principal Technologist,<br> Game Changing Development Program at <br> NASA Langley Research Center
+
+                        </p>
+                    </section>
+
+                    <section id="horan" class="col-lg-6">
+                        <img src="images/RAMImages/horan.png" alt="horan">
+                    </section>
+
+
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="team">
+
+            <section class="page col-lg-12 text-center">
+                <h1>The Team</h1>
+                <hr>
+                <div class="MainContentResults">
+                    <section class="col-sm-4">
+                        <img src="images/RAMImages/KennyParker.png" alt="kenny">
+                        <h3>Kenny Parker</h3>
+                        <h6>Computer Engineering</h6>
+
+                    </section>
+                    <section class="col-sm-4">
+                        <img src="images/RAMImages/ChrisLillard.png" alt="Chris">
+                        <h3>Chris Lillard</h3>
+                        <h6>Electrical Engineering</h6>
+
+                    </section>
+                    <section class="col-sm-4">
+                        <img src="images/RAMImages/QuanMa.png" alt="Quan">
+                        <h3>Quan Ma</h3>
+                        <h6>Computer Engineering</h6>
+                    </section>
+                    <section class="col-sm-12">
+                        <img src="images/RAMImages/Dr.Filipas.png" alt="filipas">
+                        <h3><a href="https://egr.vcu.edu/directory/afroditifilippas/"> Afroditi V. Filippas, Ph.D.</a></h3>
+                        <h6>Associate Dean at VCU <br>for Undergraduate Studies</h6>
+                    </section>
+                    <section class="col-sm-12">
+                        <hr>
+                        <h6>
+                            Special thanks to my teammates.<br> An amazing team of engineers;<br> Kenny (Master Programmer), Chris (Electrical Guru), Quan (Task Manager) and of course Dr.Filippas (Outstanding Advisor).<br> In addition to my programming and 3D modeling experience.<br> Our team was a recipe for success.<br>Thank you!
+                        </h6>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="row" id="aboutBottomPage">
+            <hr>
+            <section class="page col-lg-12 text-center">
+                <section class="col-lg-12 table-bordered">
+                    <h1> Want to Learn more about the project?</h1>
+                    <a class="middleButton1" href="docs/Final%20Report.pdf" download>
+                        <h1><b>R.A.M.S<br>FINAL REPORT</b></h1><span class="fa fa-download "></span></a>
+
+                </section>
+                <div class="MainContentBottomPage">
+                    <p>
+                        <br>(1) More information about Sternheimer Award: <a href="https://egr.vcu.edu/news-events/events/capstone-design/students/sternheimer/">https://egr.vcu.edu/sternheimer/</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- containerfluid end of div-->
+    </div>
+    <!-- content container -->
+    <footer class="footer-distributed">
+        <div id="firstFoot" class="row">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentFooter">
+                    <div class="col-md-4">
+                        <h3>Jose <span>Ramirez&#8209;Villa</span></h3>
+                        <p class="footer-links">
+                            <a href="index.html">Home</a> ·
+                            <a href="index.html#about">About</a> ·
+                            <a href="index.html#skills">Skills</a> ·
+                            <a href="index.html#projects">Projects</a> ·
+                            <!--                            <a href="index.html#faq">Q&amp;A</a> ·-->
+                            <a href="https://joseramirezvilla.wordpress.com/">Blog</a> ·
+                            <a href="mailto:jsayram3@gmail.com?subject=&body=">Contact</a>
+                        </p>
+                        <p class="footer-company-name">Jose Ramirez-Villa &copy; 2017</p>
+                    </div>
+                    <div id="middleFoot" class="col-md-4">
+                        <div class="footer-icons">
+                            <!--                        <a href="https://www.instagram.com/jsayram/"><i class="fa fa-instagram"></i></a>-->
+                            <!--                        <a href="https://twitter.com/jsayram"><i class="fa fa-twitter"></i></a>-->
+                            <a href="https://www.linkedin.com/in/ramirezju17/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/jsayram"><i class="fa fa-github"></i></a>
+                            <a class="fa fa-envelope-square" href="mailto:jsayram3@gmail.com?subject=&body="><i></i></a>
+                            <a id="blogIcon" href="https://joseramirezvilla.wordpress.com/">Blog</a>
+                            <p id="follow" class="text-center">Follow &#8226; Add &amp; Contact Me&#33;</p>
+                        </div>
+                    </div>
+                    <div id="lastFoot" class="col-md-4 text-center">
+                        <section class="row text-center">
+                            <form class="col-sm-12">
+                                <h3>Computer Engineering</h3>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <section id="belowFooter">
+        <p class="footer-company-name">Created&nbsp;&amp;&nbsp;Designed by Jose&nbsp;Uriel&nbsp;Ramirez&#8209;Villa &copy;&nbsp;2017&nbsp;&#8226;&nbsp;All&nbsp;rights&nbsp;reserved</p>
+    </section>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script_projects.js"></script>
+</body>
+
+</html>
