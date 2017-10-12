@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Jose, Ramirez, Computer, Software,web developer,VCU,Ramirez ,Villa,Java,HTML,C++, css,python,javascript,developer,Engineering,technology.">
+    <meta name="author" content="Jose Ramirez-Villa">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+
+    <!-- THIS IS THE Apropriate css file for page  -->
+    <link rel="stylesheet" href="css/styles_ROBOT_project.css">
+    <link rel="Shortcut Icon" href="favicon.ico?">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200,400|Fira+Sans:300" rel="stylesheet">
+    <title>Autonomous Robot</title>
+</head>
+<header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div id="overlay" class="overlay">
+        <nav class="navbar navbar-fixed-top transparent-header" role="navigation">
+            <div class="container-fluid class ">
+                <!-- Add all page content inside this div if you want the side nav to push page content to the right
+                    (not used if you only want the sidenav to sit on top of the page -->
+                <!-- logo JRV -->
+                <div id="main" class="navbar-left">
+                    <a id="logo" class="navbar-brand-logo " href="index.html"><img style="max-width:80px; " src="images/jrlogo.png"></a>
+                </div>
+                <!--Name shown at the top of the website Jose Ramirez-Villa-->
+                <a class="navbar-brand" href="index.html" id="name"><span></span></a>
+                <!--this is constains the button that will toggle the side navigation bar-->
+                <div class="navbar-header pull-right">
+                    <!-- button will show when the navbar collapses to a specified size ie: mobilephone screen-->
+                    <button id="buttonNav" type="button" class="toggle more navbar-toggle" data-toggle="menu-toggle" data-target="#mySidenav" onclick="openNav()">
+                        <div id="nav-icon2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!--
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        -->
+                    </button>
+                </div>
+                <!-- SIDE NAVIGATION this will open when collpased button shows on the main menu -->
+                <div id="mySidenav" class="sidenav">
+                    <!--                    <a id="closeButton" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <br>
+                    <ul class="list-unstyled">
+                        <li><a id="homeL" href="index.html">Home</a></li>
+                        <li><a id="aboutL" href="index.html#about">About</a></li>
+                        <li><a id="skillsL" href="index.html#skills">Skills</a></li>
+                        <li><a id="projectsL" href="index.html#projects">Projects</a></li>
+                        <!--                        <li><a id="faqL" href="index.html#faq">Q&amp;A</a></li>-->
+                        <a href="https://joseramirezvilla.wordpress.com/">Blog</a>
+                    </ul>
+                    <div class="footer-icons">
+                        <a href="https://www.linkedin.com/in/ramirezju17/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/jsayram"><i class="fa fa-github"></i></a>
+                        <a href="mailto:jsayram3@gmail.com?subject=&body=">
+                            <i class="fa fa-envelope-square"></i></a>
+                    </div>
+                </div>
+                <!-- main navigation items that will collapse when screen gets small -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="homeL" href="index.html">Home</a></li>
+                        <li><a id="aboutL" href="index.html#about">About</a></li>
+                        <li><a id="skillsL" href="index.html#skills">Skills</a></li>
+                        <li><a id="projectsL" href="index.html#projects">Projects</a></li>
+                        <!--                        <li><a id="faqL" href="index.html#faq">Q&amp;A</a></li>-->
+                        <li><a href="https://joseramirezvilla.wordpress.com/">Blog</a></li>
+                        <li><a id="envelopeL" href="mailto:jsayram3@gmail.com?subject=&body="><i class="fa fa-envelope-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- container -->
+        </nav>
+        <!--   STUFF ontop of the header background -->
+        <div class="container-fluid">
+            <div class="row" id="headerText">
+                <section class="page col-med-12 text-center">
+                    <h2>Microcomputer Systems<br>Autonomous Robot</h2>
+                    <div class="row">
+                        <section class="col-xs-12">
+                            <p></p>
+
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+</header>
+<!--END OF HEADER-->
+</div>
+
+<body>
+
+    <div class="container-fluid">
+        <div id="documentMenu">
+            <ul class="documentNav">
+                <li><a id="abstract" href="#abstractL">Abstract</a></li>
+                <li><a id="mech" href="#mechL">Design</a></li>
+                <li><a id="electricalL" href="#electrical">Electrical</a></li>
+                <li><a id="implemenation" href="#implementation">Implementation</a></li>
+                <li><a id="teamL" href="#team">Teamate</a></li>
+                <li><a id="sourceL" href="#source">Source Code</a></li>
+
+            </ul>
+        </div>
+        <div class="row" id="aboutTop">
+            <section class="page col-lg-12 text-center">
+
+                <div class="MainContentAboutTop">
+                    <p>
+                        <br>VCU’s Microcomputer Systems course taught me how to program, analyze, and debug a microprocessor using assembly language and the C programing language. It also exposed me on how to interface sensors as well as input/output devices to a microprocessor. It helped in understanding the concept of an instruction set architecture and the major hardware and software components of a microcomputer.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="row" id="poster">
+            <div class="MainContentDataFormat">
+                <br>
+                <section class="page col-lg-12 text-center" style="margin:0;">
+
+                    <img id="data" style="max-width:1000px; margin:0;" src="images/ROBOTImages/MainPicture.jpg" alt="MainRobot">
+                    <img id="data" style="max-width:1000px; margin:0;" src="images/ROBOTImages/FrontCornerView.JPG" alt="MainRobot">
+                    <img id="data" style="max-width:1000px; margin:0;" src="images/ROBOTImages/TopFrontCornerView.JPG" alt="MainRobot">
+
+                </section>
+            </div>
+        </div>
+        <div class="row" id="aboutMiddle">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentAboutMiddle">
+                    <hr>
+                    <h2 id="abstractL">Abstract</h2>
+                    <section class="col-md-6">
+                        <P>
+                            <br>This project consisted of designing and implementing an embedded system. An autonomous robot that is capable of navigating through a maze, follow a black line drawn on a white surface, and draw a visually appealing image on a canvas all using the knowledge and techniques acquired throughout this course. The project deliverables, timelines, constraints, and how each feat was implemented can be easily followed throughout the page.
+                        </P>
+
+                    </section>
+                    <section class="col-md-6">
+
+                        <div>
+                            <img id="habs" src="images/ROBOTImages/AbstractPicture.png" alt="abstract">
+
+                        </div>
+
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="aboutMiddle">
+            <section class="page col-lg-12 text-center">
+
+                <div class="MainContentAboutMiddle">
+                    <hr>
+                    <h2 id="mechL">Mechanical Design</h2>
+
+                    <P>
+                        <br>For the base of the Robot an acrylic glass expansion plate with all the mounting holes necessary was used that allowed for the design to have many configurations. For the rest of the chassis, four breadboards where use as the structure of the robot which are bridged by the microcontroller on top as seen below. The two breadboards on the sides, allowed for easier connections to the H-bridges* and stepper motors. This helped organize the wire clutter and allowed for a more manageable system that was easy to troubleshoot.
+
+                    </P>
+                    <img id="habs" src="images/ROBOTImages/structure_forRobot.PNG" alt="RobotStructure">
+                    <img id="habs" src="images/ROBOTImages/chashisMotor.PNG" alt="chasisMotor">
+
+                    <P>
+                        <br>For placement of sensors, it was figured that putting the reflective sensors as far as possible from your pivoting wheels, will give the microcontroller a better reaction time and reduce the chance of overshooting during the line following as well as the artwork trial. Since it allows more time to react. The distance between the sensors depended on the track itself, and in terms where places 1-3cm apart to detect whether there are discontinuities in the track. As for the distance sensors, placing one at a 45° angle at one edge of the chassis and the other facing the front allowed for a better sense of the maze. General placement of the sensors can be seen below.
+                    </P>
+                    <img id="habs" src="images/ROBOTImages/sensorPlacement.PNG" alt="sensorPlacement">
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="aboutBottom">
+            <section class="page col-lg-12 text-center">
+
+                <hr>
+                <h2 id="electrical">Electrical Design</h2>
+                <div class="MainContentAboutBottom">
+
+                    <section class="col-lg-12">
+                        <p> The Electrical Design was pretty intuitive, the schematic design was straight forward and it went hand in hand from what was original planned. The electrical design was a build off from the previous labs. See figure 9 below for the general layout of the electrical system. We took the time to draw a visual schematic that was easy to read and follow and which laid out all the components used to in the system to be controlled by the microcontroller.
+                            <br>
+                        </p>
+                        <section class="page col-lg-12 text-center">
+
+                            <img id="rams" src="images/ROBOTImages/electricalSchematic.PNG" alt="Electrical Schematic">
+
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="technology">
+            <hr>
+            <h2 style="text-align:center;">H-Bridges</h2>
+            <div class="MainContentAboutBottom">
+                <section class="page col-lg-12 text-center">
+
+                    <p>H-Bridges can be seen on the side of the robot. These are an important part of the system as they help drive the stepper motors foward. As can be seen from the Electrical Design and the image below, they take up most of the wired connections of the robot. In general we utilize at least 8 pins to drive both stepper motors, at least 4 pins for the reflectance sensors, and 2 pins for the distance sensors. That gave us a total of 14 pins used.
+                        <br>
+                    </p>
+                </section>
+                <section class="page col-lg-6 text-center">
+
+                    <img id="data" style="max-width:1000px;" src="images/ROBOTImages/H-Bridge.PNG" alt="HBridge">
+
+                </section>
+                <section class="page col-lg-6 text-center">
+
+                    <img style="max-width:400px;" src="images/ROBOTImages/HBridges.JPG" alt="HBridges">
+
+                </section>
+            </div>
+        </div>
+
+        <div class="row" id="technology">
+            <p>&nbsp;</p>
+            <div class="MainContentImplementation">
+                <h1 id="implementation" style="color:black">Software Architecture</h1>
+                <section class="col-lg-12">
+                    <section class="col-xm-12">
+                        <h1 style="color:black">Maze Algorithm</h1>
+                    </section>
+
+                    <section class="col-md-12">
+                        <img src="images/ROBOTImages/mazeTrack.JPG" alt="MazeTrack">
+
+                        <h3>The Maze Conquered</h3>
+                        <br>
+
+                        <p>The approach for the algorithm was thinking about how a human could potentially be able to navigate the maze without opening his/her eyes. An algorithm which mimics a right hand on one side of the Maze’s wall. For this algorithm, it was decided to use only one distance sensor at a 45° angle. This proved to be sufficient enough and we were able to come up with a simple algorithm that solved the problem at hand and was successful. The following images and snippets of code demonstrate how the task was accomplished.
+                            <br>
+                        </p>
+                    </section>
+                    <section class="col-sm-4">
+                        <img src="images/ROBOTImages/track1.png" alt="track1">
+
+                        <h3>Wall between 10cm and 20cm. The the robot keeps just keeps moving forward. </h3>
+
+                    </section>
+                    <section class="col-sm-4">
+                        <img src="images/ROBOTImages/track2.png" alt="track1">
+
+
+                        <h3>Front wall at a distance less than 10cm. The robot turns left</h3>
+                        <br>
+                    </section>
+                    <section class="col-sm-4">
+                        <img src="images/ROBOTImages/track3.png" alt="track3">
+
+                        <h3>Front wall at a distance less than 10cm. The robot turns left</h3>
+                        <br>
+                    </section>
+                    <section class="col-sm-6">
+                        <img src="images/ROBOTImages/track4.png" alt="track4">
+
+                        <h3>Front wall at a distance less than 10cm. The robot turns left</h3>
+                        <br>
+                    </section>
+                    <section class="col-sm-6">
+                        <img src="images/ROBOTImages/track5.png" alt="track5">
+
+                        <h3>Wall between 10cm and 20cm. The the robot keeps just keeps moving forward. </h3>
+                        <br>
+                    </section>
+                    <section class="col-md-12">
+                        <img id="pbc" src="images/ROBOTImages/bigTrack.png" alt="Custom Made PCB">
+                        <h3>Robot completes the Maze using the logic above </h3>
+                        <br>
+                    </section>
+                </section>
+            </div>
+            <hr>
+        </div>
+
+
+
+
+        <div class="row" id="technology">
+            <hr>
+            <div class="MainContentImplementation">
+                <section class="col-lg-12">
+                    <section class="col-xm-12">
+                        <h1 style="color:black">Line Following Algorithm</h1>
+                    </section>
+
+                    <section class="col-md-12">
+                        <img src="images/ROBOTImages/LineTrack.JPG" alt="LineTrack">
+
+                        <h3>The Line Followed</h3>
+                        <br>
+
+                        <p>With line following we have two different cases for each of the reflective sensors. It was either black or white , in simpler terms this may just be represented as true or false , ‘1’ or a ‘0’ respectively. We decided to go with 4 sensors to read the line on the floor. These four sensors can be denoted as four binary digits 1111: sensor 1, sensor 2, sensor 3 and sensor 4 respectively. There are just a few rules that the robot had to take in order to be a successful in following the line. As the robot is following the line, it will continue as long as any of the sensors detect a line, that is 16 different possible ways it can see the line. If the robot for any reason leaves view of the line that is 0000, then it baked up slightly. This made sure that the system stayed on the line at all times. The task was to finish. Speed was not a factor we considered.
+                            <br>
+                        </p>
+                    </section>
+                    <section class="col-sm-6">
+                        <img src="images/ROBOTImages/reflectSensorsTheory.png" alt="reflectant">
+
+                    </section>
+                    <section class="col-sm-6">
+                        <img src="images/ROBOTImages/UnderCar.JPG" alt="undercar">
+                        <br>
+                    </section>
+
+
+                    <section class="col-sm-12">
+                        <img src="images/ROBOTImages/lineTesting.PNG" alt="LineTesting">
+
+                        <h3>Testing Reflectance Sensors</h3>
+                        <br>
+                    </section>
+                    <section class="col-sm-6">
+                        <img src="images/ROBOTImages/lineFront3.PNG" alt="track4">
+
+
+                        <br>
+                    </section>
+                    <section class="col-sm-6">
+                        <img src="images/ROBOTImages/lineFront2.PNG" alt="track5">
+
+
+                        <br>
+                        <br>
+                    </section>
+                    <section class="col-sm-6">
+                        <img src="images/ROBOTImages/lineFront4.PNG" alt="track5">
+
+
+                        <br>
+                    </section>
+                    <section class="col-sm-6">
+                        <img src="images/ROBOTImages/lineFront5.PNG" alt="track5">
+                        <br>
+                    </section>
+                    <section class="col-md-4">
+                        <img id="pbc" src="images/ROBOTImages/lineReal1.PNG" alt="Custom Made PCB">
+
+
+                    </section>
+                    <section class="col-md-4">
+                        <img id="pbc" src="images/ROBOTImages/lineReal3.PNG" alt="Custom Made PCB">
+
+                    </section>
+                    <section class="col-md-4">
+                        <img id="pbc" src="images/ROBOTImages/LineReal4.PNG" alt="Custom Made PCB">
+
+                    </section>
+                    <section class="col-md-12">
+                        <p>
+                            In order to achieve what can be seen above, it be broken down into 3 logical steps. As the sensor read the conditions set in front of them the value is stored in a byte with each bit representing the status of one particular sensor. If a bit is 1, then the corresponding sensor is over the line and if the bit is 0, then it is not on the line. <br> The following examples will make it clear. If the value of the sensors is ‘0110’, or sensor 1=0 , sensor 2=1 , sensor 3=1, and sensor 4=0 respectively then the robot sees the line and move forward. Each sensor represent a hexadecimal value 0x0000 or 0x0101, up to 16 cases total. After it does one case the program loops again and it performs the corresponding case based on the condition from the final_move below. If the sensors read show a configuration to be 0x0001. This runs the corresponding case 0x0001, which triggers a sequence for the motor to move slightly to the right and them move forward slightly. <br>If the sensor reads 0x0001 , during this case the robot will see the line in its far right and it terms will correct itself and turn right. This can be true for the case in which sees the sensors ‘1100’ or ‘0011’ or even ‘1000’ and ‘0001’. If the most extreme cases ‘1000’ or '0001' are done, that means that is a need for a turn and the robot will turn accordingly. The speed and direction of both motors are adjusted. </p>
+
+                    </section>
+                </section>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row" id="technology">
+            <p>&nbsp;</p>
+            <div class="MainContentImplementation">
+                <section class="col-lg-12">
+                    <section class="col-xm-12">
+                        <h1 style="color:black">Drawing Algorithm</h1>
+                    </section>
+
+                    <section class="col-md-12">
+                        <img src="images/ROBOTImages/Artwork.png" alt="MazeTrack">
+
+                        <h3>Drawing a Circle on a Canvas</h3>
+                        <br>
+                    </section>
+
+                    <section class="col-md-6">
+                        <img src="images/ROBOTImages/PenOut.JPG" alt="MazeTrack">
+
+                        <h3>Drawing a Circle on a Canvas</h3>
+                        <br>
+                    </section>
+                    <section class="col-md-6">
+                        <img src="images/ROBOTImages/PenIn.JPG" alt="MazeTrack">
+
+                    </section>
+                    <section class="col-md-12">
+                        <p> The Writing Mechanism was thought as as a spring in a car, the spring of the pen allowed it to keep constant pressure on the canvas without it being to much pressure. Adding weight on the top of pen, allowed for a small drawing on the canvas.</p>
+
+                        <img src="images/ROBOTImages/PenUnder.jpg" alt="MazeTrack">
+
+                    </section>
+
+                    <section class="col-md-12">
+                        <br>
+                        <p>For qualification, the task was to draw a simple square that was bigger than 9” by 9”, and smaller than 15” by 15”. Ideally a square that is approximately 12”. For the competition the task was to draw a visually appealing image, it was decided that a balloon was the best choice because everyone like balloons. Image above shows the breakdown of the basic components used to achieve the drawing feat.
+                            <br> Although the implementation for the drawing was simple, the build up to achieve such simplicity was not easy, motor function timing , and coordination with the motors and mechanical placement of the utensil made it challenging. But as far as the software implementation in main. It was fairly straight forward. The rest follows the same logic. Different for loop timing and motor direction.
+                            <br>
+                        </p>
+                        <br>
+
+                    </section>
+
+                </section>
+            </div>
+            <hr>
+        </div>
+
+        <div class="row" id="team">
+
+            <section class="page col-lg-12 text-center">
+                <h1>Teamate</h1>
+                <hr>
+                <div class="MainContentResults">
+
+                    <section class="col-sm-12">
+                        <img src="images/RAMImages/QuanMa.png" alt="Quan">
+                        <h3>Quan Ma</h3>
+                        <h6>Computer Engineering</h6>
+                    </section>
+                    <section class="col-sm-12">
+                        <hr>
+                        <h6>
+                            Special thanks to my teammate<br> It was a rough time getting through this project and course but we managed to pull through.
+                        </h6>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="row" id="aboutBottomPage">
+            <hr>
+            <section class="page col-lg-12 text-center">
+                <section class="col-lg-12 table-bordered">
+                    <h1 id="source"> Want to Learn more about the project?</h1>
+                    <h3> This shows algorithms in more detail, as well as budgeting and planning. Includes source code</h3>
+
+                    <a class="middleButton1" href="docs/364FinalReport.pdf" download>
+                        <h1><b>Microcomputer Systems - Autonomous Robot<br>FINAL REPORT</b></h1><span class="fa fa-download "></span></a>
+
+                </section>
+                <div class="MainContentBottomPage">
+                    <h3>Check out the Source Code on Github</h3>
+                    <p>
+                        <br>(1) <a href="https://github.com/jsayram/Maze_Follower_Robot">Maze Solver Source Code</a>
+                    </p>
+                    <p>
+                        <br>(2) <a href="https://github.com/jsayram/Line_Following_Robot">Line Follower Source Code</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- containerfluid end of div-->
+    </div>
+    <!-- content container -->
+    <footer class="footer-distributed">
+        <div id="firstFoot" class="row">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentFooter">
+                    <div class="col-md-4">
+                        <h3>Jose <span>Ramirez&#8209;Villa</span></h3>
+                        <p class="footer-links">
+                            <a href="index.html">Home</a> ·
+                            <a href="index.html#about">About</a> ·
+                            <a href="index.html#skills">Skills</a> ·
+                            <a href="index.html#projects">Projects</a> ·
+                            <!--                            <a href="index.html#faq">Q&amp;A</a> ·-->
+                            <a href="https://joseramirezvilla.wordpress.com/">Blog</a> ·
+                            <a href="mailto:jsayram3@gmail.com?subject=&body=">Contact</a>
+                        </p>
+                        <p class="footer-company-name">Jose Ramirez-Villa &copy; 2017</p>
+                    </div>
+                    <div id="middleFoot" class="col-md-4">
+                        <div class="footer-icons">
+                            <!--                        <a href="https://www.instagram.com/jsayram/"><i class="fa fa-instagram"></i></a>-->
+                            <!--                        <a href="https://twitter.com/jsayram"><i class="fa fa-twitter"></i></a>-->
+                            <a href="https://www.linkedin.com/in/ramirezju17/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/jsayram"><i class="fa fa-github"></i></a>
+                            <a class="fa fa-envelope-square" href="mailto:jsayram3@gmail.com?subject=&body="><i></i></a>
+                            <a id="blogIcon" href="https://joseramirezvilla.wordpress.com/">Blog</a>
+                            <p id="follow" class="text-center">Follow &#8226; Add &amp; Contact Me&#33;</p>
+                        </div>
+                    </div>
+                    <div id="lastFoot" class="col-md-4 text-center">
+                        <section class="row text-center">
+                            <form class="col-sm-12">
+                                <h3>Computer Engineering</h3>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <section id="belowFooter">
+        <p class="footer-company-name">Created&nbsp;&amp;&nbsp;Designed by Jose&nbsp;Uriel&nbsp;Ramirez&#8209;Villa &copy;&nbsp;2017&nbsp;&#8226;&nbsp;All&nbsp;rights&nbsp;reserved</p>
+    </section>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script_projects.js"></script>
+</body>
+
+</html>
