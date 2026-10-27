@@ -3,291 +3,453 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NMEA GPS Parser — Jose Ramirez-Villa</title>
-    <meta name="description" content="A C++ state-machine parser for NMEA GPS sentences that reads .log files or live serial data and prints position, time, speed and satellite data.">
-    <meta name="keywords" content="Jose, Ramirez, Computer, Software, VCU, C++, NMEA, GPS, parser, state machine">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Jose, Ramirez, Computer, Software,web developer,VCU,Ramirez ,Villa,Java,HTML,C++, css,python,javascript,developer,Engineering,technology.">
     <meta name="author" content="Jose Ramirez-Villa">
-    <meta property="og:title" content="NMEA GPS Parser — Jose Ramirez-Villa">
-    <meta property="og:description" content="A C++ state-machine parser for NMEA GPS sentences.">
-    <meta property="og:image" content="https://jsayram.github.io/images/GPS.jpg">
-    <link rel="canonical" href="https://jsayram.github.io/NMEA_Project.html">
-    <link rel="icon" href="favicon.ico">
-    <script>
-        (function () { var t; try { t = localStorage.getItem('theme'); } catch (e) {} if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; document.documentElement.setAttribute('data-theme', t); document.documentElement.classList.add('js'); })();
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-    <link rel="stylesheet" href="css/site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+
+    <!-- THIS IS THE Apropriate css file for page  -->
+    <link rel="stylesheet" href="css/styles_NMEA_project.css">
+    <link rel="Shortcut Icon" href="favicon.ico?">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:200,400|Fira+Sans:300" rel="stylesheet">
+    <title>NMEA-GPS Assignment</title>
 </head>
+<header>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div id="overlay" class="overlay">
+        <nav class="navbar navbar-fixed-top transparent-header" role="navigation">
+            <div class="container-fluid class ">
+                <!-- Add all page content inside this div if you want the side nav to push page content to the right
+                    (not used if you only want the sidenav to sit on top of the page -->
+                <!-- logo JRV -->
+                <div id="main" class="navbar-left">
+                    <a id="logo" class="navbar-brand-logo " href="index.html"><img style="max-width:80px; " src="images/jrlogo.png"></a>
+                </div>
+                <!--Name shown at the top of the website Jose Ramirez-Villa-->
+                <a class="navbar-brand" href="index.html" id="name"><span></span></a>
+                <!--this is constains the button that will toggle the side navigation bar-->
+                <div class="navbar-header pull-right">
+                    <!-- button will show when the navbar collapses to a specified size ie: mobilephone screen-->
+                    <button id="buttonNav" type="button" class="toggle more navbar-toggle" data-toggle="menu-toggle" data-target="#mySidenav" onclick="openNav()">
+                        <div id="nav-icon2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!--
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        -->
+                    </button>
+                </div>
+                <!-- SIDE NAVIGATION this will open when collpased button shows on the main menu -->
+                <div id="mySidenav" class="sidenav">
+                    <!--                    <a id="closeButton" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <br>
+                    <ul class="list-unstyled">
+                        <li><a id="homeL" href="index.html">Home</a></li>
+                        <li><a id="aboutL" href="index.html#about">About</a></li>
+                        <li><a id="skillsL" href="index.html#skills">Skills</a></li>
+                        <li><a id="projectsL" href="index.html#projects">Projects</a></li>
+                        <!--                        <li><a id="faqL" href="index.html#faq">Q&amp;A</a></li>-->
+                        <a href="https://joseramirezvilla.wordpress.com/">Blog</a>
+                    </ul>
+                    <div class="footer-icons">
+                        <a href="https://www.linkedin.com/in/ramirezju17/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/jsayram"><i class="fa fa-github"></i></a>
+                        <a href="mailto:jsayram3@gmail.com?subject=&body=">
+                            <i class="fa fa-envelope-square"></i></a>
+                    </div>
+                </div>
+                <!-- main navigation items that will collapse when screen gets small -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="homeL" href="index.html">Home</a></li>
+                        <li><a id="aboutL" href="index.html#about">About</a></li>
+                        <li><a id="skillsL" href="index.html#skills">Skills</a></li>
+                        <li><a id="projectsL" href="index.html#projects">Projects</a></li>
+                        <!--                        <li><a id="faqL" href="index.html#faq">Q&amp;A</a></li>-->
+                        <li><a href="https://joseramirezvilla.wordpress.com/">Blog</a></li>
+                        <li><a id="envelopeL" href="mailto:jsayram3@gmail.com?subject=&body="><i class="fa fa-envelope-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- container -->
+        </nav>
+        <!--   STUFF ontop of the header background -->
+        <div class="container-fluid">
+            <div class="row" id="headerText">
+                <section class="page col-med-12 text-center">
+                    <h2>NMEA - GPS PARSER</h2>
+                    <div class="row">
+                        <section class="col-xs-12">
+                            <p></p>
+
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+</header>
+<!--END OF HEADER-->
+</div>
 
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div class="progress" aria-hidden="true"></div>
 
-    <header class="site-header">
-        <div class="container">
-            <a class="brand" href="index.html" aria-label="Jose Ramirez-Villa, home">
-                <span class="brand-mark"><img src="images/jrlogo.png" alt="" width="24" height="22"></span>
-                <span class="brand-name">Jose <span>Ramirez-Villa</span></span>
-            </a>
-            <nav class="nav" aria-label="Primary">
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#skills">Skills</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="https://joseramirezvilla.wordpress.com/">Blog</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle theme">
-                    <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-                    <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-                </button>
-                <button class="icon-btn menu-btn" type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"><span></span><span></span><span></span></button>
-            </nav>
+    <div class="container-fluid">
+        <div id="documentMenu">
+            <ul class="documentNav">
+                <li><a id="NMEA(info)" href="#NMEAInfo">NMEA Info</a></li>
+                <li><a id="dataFormatL" href="#dataFormat">Data Format</a></li>
+                <li><a id="implementationL" href="#implementation">Code</a></li>
+                <li><a id="resultsL" href="#results">Results</a></li>
+            </ul>
         </div>
-    </header>
-
-    <main id="main">
-        <section class="page-hero">
-            <div class="page-hero-bg" aria-hidden="true"></div>
-            <div class="container">
-                <a class="crumb hero-fade" href="index.html#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>All projects</a>
-                <span class="eyebrow hero-fade" style="--i:1">Project 02 · Advanced programming using C++</span>
-                <h1 class="page-title hero-title" style="margin-top:20px"><span class="line"><span style="--i:0">NMEA GPS</span></span><span class="line"><span style="--i:1"><em>Parser</em></span></span></h1>
-                <p class="lede hero-fade" style="--i:2">Advanced Programming Using C++ is a course taught at Virginia Commonwealth University as part of the Computer Engineering curriculum. One of the course assignments was to create a C++ program that parses NMEA messages and displays them to the console in a specified order.</p>
-                <ul class="chips hero-fade" style="--i:3">
-                    <li class="chip chip-accent">C++</li>
-                    <li class="chip">State machine</li>
-                    <li class="chip">RS-232 serial</li>
-                    <li class="chip">.log file parsing</li>
-                    <li class="chip">Makefile</li>
-                </ul>
-                <dl class="page-hero-meta hero-fade" style="--i:4">
-                    <div><dt>Course</dt><dd>Advanced Programming Using C++</dd></div>
-                    <div><dt>School</dt><dd>Virginia Commonwealth University</dd></div>
-                    <div><dt>Input</dt><dd>.log files or live NMEA GPS</dd></div>
-                    <div><dt>Source</dt><dd><a class="link" href="https://github.com/jsayram/NMEA_GPS_Sentence_Parser/tree/master/Hw9">GitHub ↗</a></dd></div>
-                </dl>
-
-                <div class="terminal cover" data-reveal="scale" style="margin-top:48px">
-                    <div class="terminal-bar"><i></i><i></i><i></i><span>gps.log</span></div>
-<pre><span class="k">$GPGGA</span>,155002.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000<span class="w">*58</span>
-<span class="k">$GPGSA</span>,A,3,17,06,28,02,24,,,,,,,,3.2,1.7,2.7<span class="w">*3E</span>
-<span class="k">$GPRMC</span>,155002.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A<span class="w">*48</span>
-<span class="k">$GPGGA</span>,155003.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000<span class="w">*59</span>
-<span class="k">$GPGSA</span>,A,3,17,06,28,02,24,,,,,,,,3.2,1.7,2.7<span class="w">*3E</span>
-<span class="k">$GPGGA</span>,190326.054,,,,,0,00,50.0,,M,0.0,M,,0000<span class="w">*43</span>   <span class="m">// no fix</span>
-<span class="k">$GPRMC</span>,155006.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A<span class="w">*4C</span><span class="caret"></span></pre>
+        <div class="row" id="aboutTop">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentAboutTop">
+                    <p>
+                        <br>Advanced Programming Using C++ is a course that is taught at Virginia Commonwealth university as part of the Computer Engineering curriculum. In this course one of the course assignments was to successfully create a C++ program that is able to parse NMEA Messages and properly display them the console in an specified order.
+                    </p>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <nav class="doc-nav" aria-label="On this page">
-            <div class="container">
-                <ul>
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#dataFormat">Data format</a></li>
-                    <li><a href="#implementation">Code</a></li>
-                    <li><a href="#results">Results</a></li>
-                    <li><a href="#NMEAInfo">NMEA info</a></li>
-                    <li><a href="#sources">Sources</a></li>
-                </ul>
-            </div>
-        </nav>
+        <!--
+        <div class="row" id="aboutMiddle">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentAboutMiddle">
+                    <hr>
 
-        <section class="doc-section" id="overview">
-            <div class="container split">
-                <div data-reveal>
-                    <span class="eyebrow">Overview</span>
-                    <h2 class="h-section" style="margin-top:16px">Same sentence, <em>different state.</em></h2>
-                    <div class="prose">
-                        <p>The data in the NMEA GPS sentences is contained in comma-separated fields. While the number of fields in each message type and their meanings are fixed, whether or not they actually contain data varies with the state of the GPS receiver.</p>
+
+                    <h2>The Data</h2>
+                    <div class="myBox">
+
+                        <p> <br>$GPGGA,155002.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000*58 $GPGSA,A,3,17,06,28,02,24,,,,,,,,3.2,1.7,2.7*3E $GPRMC,155002.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A*48 $GPGGA,155003.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000*59 $GPGSA,A,3,17,06,28,02,24,,,,,,,,3.2,1.7,2.7*3E $GPGGA,190326.054,,,,,0,00,50.0,,M,0.0,M,,0000*43 $GPRMC,155006.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A*4C $GPGGA,155002.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000*58 $GPRMC,155006.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A*4C
+                            <br>
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+-->
+        <div class="row" id="aboutBottom">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentAboutBottom">
+                    <hr>
+                    <P>
+                        <br>The data in the NMEA GPS sentences is contained in comma-separated fields. While the number of fields in each message type and their meanings are fixed, depending on the state of the GPS receiver, whether or not they actually contain data is variable.<br> <br>For example, with a valid GPS fix, a GPGGA message may look like this one:
+                    </P>
+                    <div class="myTinyBox">
+                        <span>$GPGGA,155002.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000*58</span>
+
+                    </div>
+                    <br>
+                    <p>
+                        But without a GPS fix, a GPGGA message may look like this one:
+                    </p>
+
+                    <div class="myTinyBox">
+                        <Span>$GPGGA,190326.054,,,,,0,00,50.0,,M,0.0,M,,0000*43</Span>
+                    </div>
+                    <br>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="dataFormat">
+            <h2 style="text-align:center;">Data Gathered Output Format </h2>
+            <div class="MainContentDataFormat">
+                <section class="page col-lg-12 text-center">
+                    <div class="row">
+                        <section class="col-md-6">
+
+                            <img id="data" style="max-width:900px;" src="images/GPSImages/dataFormat.jpg" alt="data">
+
+                        </section>
+                        <section class="col-md-6">
+                            <p>
+                                <br>UTC time: 155006.000<br> Date: 14/10/2014 <br><br> Latitude: 37d 32.7239'<br> Longitude: -77d 26.9956'<br> Altitude: 89.1M
+                                <br>
+                                <br>Speed:0.00 knots, Course:80.30 degrees, true <br>3D fix Satellite count: 5<br> PDOP: 3.2 <br> HDOP: 1.7
+                                <br> VDOP: 2.7
+                                <br>
+                            </p>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="row" id="implementation">
+            <p>&nbsp;</p>
+            <div class="MainContentImplementation">
+                <h2>Program Files</h2>
+                <section class="col-lg-12">
+                    <section class="col-md-6">
+
+                        <div class="myBigBox">
+                            <img id="HFile" src="images/GPSImages/Hfile.jpg" alt="makefile">
+                        </div>
+                        <h3>Header File</h3>
+                        <br>
+                    </section>
+                    <section class="col-md-6">
+
+                        <div class="myBigBox">
+                            <img id="HFile" src="images/GPSImages/mainParser.jpg" alt="makefile">
+                        </div>
+                        <h3>Sentence Parser</h3>
+                        <br>
+                    </section>
+
+                </section>
+                <section class="col-lg-12">
+                    <section class="col-md-6">
+
+                        <div class="myBigBox">
+                            <img id="HFile" src="images/GPSImages/programParser.jpg" alt="makefile">
+                        </div>
+                        <h3>Main Parser for data files</h3>
+                        <br>
+                    </section>
+                    <section class="col-md-6">
+
+                        <div class="myBigBox">
+                            <img id="HFile" src="images/GPSImages/windowFile.jpg" alt="makefile">
+                        </div>
+                        <h3>Windows Program for Serial Data Input</h3>
+                        <br>
+                    </section>
+
+                </section>
+            </div>
+            <hr>
+            <!-- Web divider-->
+        </div>
+
+
+
+        <!--
+        <div class="row" id="projects">
+            <section class="page col-lg-12 text-center">
+
+                <div class="MainContentProjects">
+                    <h2>Projects</h2>
+                    <section class="col-lg-4">
+                        <div class="jm-item second">
+                            <div class="jm-item-wrapper">
+                                <div class="jm-item-image">
+                                    <img src="images/Vcu_computer.JPG" alt="RAMS" />
+                                    <div class="jm-item-description">
+                                        <div class="jm-item-button">
+                                            <a href="#">View</a>
+                                            <br>
+                                            <br>
+                                            <p> Lorem ipsum dolor sit amet. 1. Lorem 2. Ipsum 3. Dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jm-item-title">Pizza Ristorante</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-lg-4">
+                        <div class="jm-item second">
+                            <div class="jm-item-wrapper">
+                                <div class="jm-item-image">
+                                    <img src="images/suit.png" alt="RAMS" />
+                                    <div class="jm-item-description">
+                                        <div class="jm-item-button">
+                                            <a href="#">View</a>
+                                            <br>
+                                            <br>
+                                            <p> Lorem ipsum dolor sit amet. 1. Lorem 2. Ipsum 3. Dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jm-item-title">Pizza Ristorante</div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-lg-4">
+                        <div class="jm-item second">
+                            <div class="jm-item-wrapper">
+                                <div class="jm-item-image">
+                                    <img src="images/suit.png" alt="RAMS" />
+                                    <div class="jm-item-description">
+                                        <div class="jm-item-button">
+                                            <a href="#">View</a>
+                                            <br>
+                                            <br>
+                                            <p> Lorem ipsum dolor sit amet. 1. Lorem 2. Ipsum 3. Dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="jm-item-title">Pizza Ristorante</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+-->
+        <div class="row" id="results">
+            <section class="page col-lg-12 text-center">
+                <h2>Results</h2>
+                <hr>
+                <div class="myMedBox">
+
+                    <p>$GPGGA,190326.054,,,,,0,00,50.0,,M,0.0,M,,0000*43<br> $GPRMC,155006.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A*4C<br> $GPGGA,155002.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000*58 <br> $GPRMC,155006.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A*4C
+
+                    </p>
+                </div>
+            </section>
+            <section class="page col-lg-12 text-center">
+                <h2>Using Log Data Above</h2>
+                <div class="MainContentResults">
+
+                    <section class="col-lg-6">
+                        <div class="myMedBox">
+                            <img src="images/GPSImages/GPGGA_GPS8_Good.png" alt="GPGGA">
+                        </div>
+                        <h3>#1 $GPGGA Sentence</h3>
+                        <br>
+
+                    </section>
+                    <section class="col-lg-6">
+                        <div class="myMedBox">
+                            <img src="images/GPSImages/GPGGA_GPS8_BAD.png" alt="GPGGA">
+                        </div>
+                        <h3>#2 $GPGGA Sentence</h3>
+                        <br>
+
+                    </section>
+                    <section class="col-lg-6">
+                        <div class="myMedBox">
+                            <img src="images/GPSImages/GPRMC_GPS8_Good.png" alt="GPGGA">
+                        </div>
+                        <h3>#1 $GPMRC Sentence</h3>
+                        <br>
+                    </section>
+                    <section class="col-lg-6">
+                        <div class="myMedBox">
+                            <img src="images/GPSImages/GPRMC_GPS8_Bad.png" alt="GPGGA">
+                        </div>
+
+                        <h3>#2 $GPMRC Sentence</h3>
+                        <br>
+                    </section>
+
+                </div>
+            </section>
+        </div>
+        <div class="row" id="NMEAInfo">
+
+            <section class="page col-lg-12 text-center">
+                <h2>Learn About NMEA &amp;<br> How the data is read from an NMEA GPS
+                </h2>
+                <div class="MainContentBottomPage">
+                    <p>
+                        <br>NMEA is an acronym for the National Marine Electronic Association. It existed well before Global Positioning Systems(GPS) was invented. Today In the world of GPS, NMEA is a standard data format supported by al GPS manufacturers, much like ASCII is the standard for digital computer characters in the computer world. <b><a href="http://gpsworld.com/what-exactly-is-gps-nmea-data/">(2)</a>
+                        </p></b>
+
+                    </p>
+                    <p>
+                        <br>NMEA GPS sentences consist of data in ASCII form – that is, each byte of information that is output corresponds to an ASCII character. Thus NMEA sentences are typically transmitted over an RS-232 serial link and thus are received one byte at a time. For the purposes of the assignment, we read the NMEA GPS sentences from a file, one byte at a time. But was tested with an actual NMEA GPS at the end equating to the same idea. Its simply a matter of adding another file that allows the program to take the data input from a serial link.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="row" id="aboutMiddle">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentBottomPage">
+                    <hr>
+                    <h2>The Data</h2>
+                    <p> <br>A valid sentence starts with a ‘$’ character. After the ‘$’, there is a 5- character sequence starting with “GP” and ending with three characters that specify the “type” of the message. After the ‘$’ character and message type, the sentence includes a variable number of characters that contain the actual message data. After the message data, the sentence will contain a ‘*’ character signifying the end of the data. Following the ‘*’ character, there will be two ASCII characters which specify the checksum of the message in hexadecimal format. After the two checksum characters, the next character should be a ‘$’ character signifying the start of the next message.<b><a href="http://aprs.gids.nl/nmea/">(1)</a>
+                        </p></b>
+                        <br>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="row" id="aboutBottomPage">
+            <hr>
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentBottomPage">
+                    <h2>Sources</h2>
+                    <p>
+                        More information and examples of the NMEA GPS sentences can be found at these websites <br> Sources<br>(1) About NMEA Sentences: <a href="http://aprs.gids.nl/nmea/">http://aprs.gids.nl/nmea/</a>
+                        <br>(2) What is NMEA GPS Data:
+                        <a href="http://gpsworld.com/what-exactly-is-gps-nmea-data/">http://gpsworld.com/what-exactly-is-gps-nmea-data/t</a>
+                    </p>
+                    <hr> Check out source code for this Assigment<br> GITHUB<br> <a href="https://github.com/jsayram/NMEA_GPS_Sentence_Parser/tree/master/Hw9">jsayram/NMEA_GPS_Sentence_Parser</a>
+                    <br>
+                </div>
+            </section>
+        </div>
+
+        <!-- containerfluid end of div-->
+    </div>
+    <!-- content container -->
+    <footer class="footer-distributed">
+        <div id="firstFoot" class="row">
+            <section class="page col-lg-12 text-center">
+                <div class="MainContentFooter">
+                    <div class="col-md-4">
+                        <h3>Jose <span>Ramirez&#8209;Villa</span></h3>
+                        <p class="footer-links">
+                            <a href="index.html">Home</a> ·
+                            <a href="index.html#about">About</a> ·
+                            <a href="index.html#skills">Skills</a> ·
+                            <a href="index.html#projects">Projects</a> ·
+                            <!--                            <a href="index.html#faq">Q&amp;A</a> ·-->
+                            <a href="https://joseramirezvilla.wordpress.com/">Blog</a> ·
+                            <a href="mailto:jsayram3@gmail.com?subject=&body=">Contact</a>
+                        </p>
+                        <p class="footer-company-name">Jose Ramirez-Villa &copy; 2017</p>
+                    </div>
+                    <div id="middleFoot" class="col-md-4">
+                        <div class="footer-icons">
+                            <!--                        <a href="https://www.instagram.com/jsayram/"><i class="fa fa-instagram"></i></a>-->
+                            <!--                        <a href="https://twitter.com/jsayram"><i class="fa fa-twitter"></i></a>-->
+                            <a href="https://www.linkedin.com/in/ramirezju17/"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/jsayram"><i class="fa fa-github"></i></a>
+                            <a class="fa fa-envelope-square" href="mailto:jsayram3@gmail.com?subject=&body="><i></i></a>
+                            <a id="blogIcon" href="https://joseramirezvilla.wordpress.com/">Blog</a>
+                            <p id="follow" class="text-center">Follow &#8226; Add &amp; Contact Me&#33;</p>
+                        </div>
+                    </div>
+                    <div id="lastFoot" class="col-md-4 text-center">
+                        <section class="row text-center">
+                            <form class="col-sm-12">
+                                <h3>Computer Engineering</h3>
+                            </form>
+                        </section>
                     </div>
                 </div>
-                <div data-reveal>
-                    <p style="color:var(--muted);font-size:15px;margin-bottom:6px">With a valid GPS fix, a GPGGA message may look like this:</p>
-                    <div class="terminal">
-                        <div class="terminal-bar"><i></i><i></i><i></i><span>valid fix</span></div>
-<pre><span class="k">$GPGGA</span>,155002.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000<span class="w">*58</span></pre>
-                    </div>
-                    <p style="color:var(--muted);font-size:15px;margin:22px 0 6px">Without a GPS fix, a GPGGA message may look like this:</p>
-                    <div class="terminal">
-                        <div class="terminal-bar"><i></i><i></i><i></i><span>no fix</span></div>
-<pre><span class="k">$GPGGA</span>,190326.054,,,,,0,00,50.0,,M,0.0,M,,0000<span class="w">*43</span></pre>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="doc-section" id="dataFormat">
-            <div class="container">
-                <div class="section-head" data-reveal>
-                    <span class="eyebrow">Data format</span>
-                    <h2 class="h-section">Data gathered, <em>output format.</em></h2>
-                </div>
-                <div class="split">
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/dataFormat.webp" alt="Parsed GPS data output format" loading="lazy"></div>
-                        <figcaption>Console output format for the parsed fields.</figcaption>
-                    </figure>
-                    <dl class="data-list" data-reveal>
-                        <div><dt>UTC time</dt><dd>155006.000</dd></div>
-                        <div><dt>Date</dt><dd>14/10/2014</dd></div>
-                        <div><dt>Latitude</dt><dd>37d 32.7239'</dd></div>
-                        <div><dt>Longitude</dt><dd>-77d 26.9956'</dd></div>
-                        <div><dt>Altitude</dt><dd>89.1 M</dd></div>
-                        <div><dt>Speed</dt><dd>0.00 knots</dd></div>
-                        <div><dt>Course</dt><dd>80.30°, true</dd></div>
-                        <div><dt>3D fix satellites</dt><dd>5</dd></div>
-                        <div><dt>PDOP</dt><dd>3.2</dd></div>
-                        <div><dt>HDOP</dt><dd>1.7</dd></div>
-                        <div><dt>VDOP</dt><dd>2.7</dd></div>
-                        <div><dt>Checksum</dt><dd>Hex, after *</dd></div>
-                    </dl>
-                </div>
-            </div>
-        </section>
-
-        <section class="doc-section" id="implementation">
-            <div class="container">
-                <div class="section-head" data-reveal>
-                    <span class="eyebrow">Code</span>
-                    <h2 class="h-section">Program files</h2>
-                </div>
-                <div class="gallery cols-2" data-stagger>
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/Hfile.webp" alt="Header file source code" loading="lazy"></div>
-                        <figcaption><strong>Header file</strong>Type and function declarations for the parser.</figcaption>
-                    </figure>
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/mainParser.webp" alt="Sentence parser source code" loading="lazy"></div>
-                        <figcaption><strong>Sentence parser</strong>The state machine that walks each sentence byte by byte.</figcaption>
-                    </figure>
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/programParser.webp" alt="Main parser for data files source code" loading="lazy"></div>
-                        <figcaption><strong>Main parser for data files</strong>Reads .log files one byte at a time.</figcaption>
-                    </figure>
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/windowFile.webp" alt="Windows program for serial data input" loading="lazy"></div>
-                        <figcaption><strong>Windows program for serial data input</strong>Takes live input from a GPS over a serial link.</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section class="doc-section" id="results">
-            <div class="container">
-                <div class="section-head" data-reveal>
-                    <span class="eyebrow">Results</span>
-                    <h2 class="h-section">Using the <em>log data</em> below</h2>
-                </div>
-                <div class="terminal" data-reveal>
-                    <div class="terminal-bar"><i></i><i></i><i></i><span>input.log</span></div>
-<pre><span class="k">$GPGGA</span>,190326.054,,,,,0,00,50.0,,M,0.0,M,,0000<span class="w">*43</span>
-<span class="k">$GPRMC</span>,155006.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A<span class="w">*4C</span>
-<span class="k">$GPGGA</span>,155002.000,3732.7239,N,07726.9956,W,1,05,1.7,89.1,M,-33.6,M,,0000<span class="w">*58</span>
-<span class="k">$GPRMC</span>,155006.000,A,3732.7239,N,07726.9956,W,0.00,80.30,141014,,,A<span class="w">*4C</span></pre>
-                </div>
-                <div class="gallery cols-2" data-stagger>
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/GPGGA_GPS8_Good.webp" alt="Output for GPGGA sentence 1" loading="lazy"></div>
-                        <figcaption><strong>#1 $GPGGA sentence</strong></figcaption>
-                    </figure>
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/GPGGA_GPS8_BAD.webp" alt="Output for GPGGA sentence 2" loading="lazy"></div>
-                        <figcaption><strong>#2 $GPGGA sentence</strong></figcaption>
-                    </figure>
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/GPRMC_GPS8_Good.webp" alt="Output for GPRMC sentence 1" loading="lazy"></div>
-                        <figcaption><strong>#1 $GPRMC sentence</strong></figcaption>
-                    </figure>
-                    <figure class="figure" data-reveal>
-                        <div class="frame"><img src="images/opt/GPSImages/GPRMC_GPS8_Bad.webp" alt="Output for GPRMC sentence 2" loading="lazy"></div>
-                        <figcaption><strong>#2 $GPRMC sentence</strong></figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section class="doc-section" id="NMEAInfo">
-            <div class="container split" style="align-items:start">
-                <div data-reveal>
-                    <span class="eyebrow">NMEA info</span>
-                    <h2 class="h-section" style="margin-top:16px">How the data is read from an <em>NMEA GPS</em></h2>
-                </div>
-                <div class="prose" data-reveal>
-                    <p>NMEA is an acronym for the National Marine Electronics Association. It existed well before Global Positioning Systems (GPS) were invented. Today, in the world of GPS, NMEA is a standard data format supported by all GPS manufacturers, much like ASCII is the standard for digital computer characters in the computer world. <a href="http://gpsworld.com/what-exactly-is-gps-nmea-data/">(2)</a></p>
-                    <p>NMEA GPS sentences consist of data in ASCII form: each byte of information that is output corresponds to an ASCII character. NMEA sentences are typically transmitted over an RS-232 serial link and are received one byte at a time. For the assignment, we read the NMEA GPS sentences from a file, one byte at a time, and tested with an actual NMEA GPS at the end. It's simply a matter of adding another file that allows the program to take its input from a serial link.</p>
-                    <h3>The data</h3>
-                    <p>A valid sentence starts with a ‘$’ character. After the ‘$’, there is a 5-character sequence starting with “GP” and ending with three characters that specify the “type” of the message. After the message type, the sentence includes a variable number of characters that contain the actual message data. After the message data, the sentence contains a ‘*’ character signifying the end of the data. Following the ‘*’, there are two ASCII characters which specify the checksum of the message in hexadecimal format. After the two checksum characters, the next character should be a ‘$’ signifying the start of the next message. <a href="http://aprs.gids.nl/nmea/">(1)</a></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="doc-section" id="sources">
-            <div class="container">
-                <div class="section-head" data-reveal>
-                    <span class="eyebrow">Sources &amp; code</span>
-                    <h2 class="h-section">Read more, <em>run it yourself.</em></h2>
-                </div>
-                <ol class="sources" data-reveal>
-                    <li><span>About NMEA sentences: <a class="link" href="http://aprs.gids.nl/nmea/">http://aprs.gids.nl/nmea/</a></span></li>
-                    <li><span>What is NMEA GPS data: <a class="link" href="http://gpsworld.com/what-exactly-is-gps-nmea-data/">http://gpsworld.com/what-exactly-is-gps-nmea-data/</a></span></li>
-                </ol>
-                <div class="repo-links" data-reveal>
-                    <a class="repo" href="https://github.com/jsayram/NMEA_GPS_Sentence_Parser/tree/master/Hw9">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
-                        <div><strong>Source code for this assignment</strong><span>jsayram/NMEA_GPS_Sentence_Parser</span></div>
-                        <svg class="go" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <a class="next-project" href="RAMS_Project.html">
-            <span class="peek" aria-hidden="true"><img src="images/opt/RAMImages/display.webp" alt="" loading="lazy"></span>
-            <span class="eyebrow">Next project</span><br>
-            <span class="title">R.A.M.S <em>→</em></span>
-        </a>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <p class="footer-brand">Jose <span>Ramirez&#8209;Villa</span></p>
-                    <p>Computer Engineering</p>
-                </div>
-                <div>
-                    <h4>Explore</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#skills">Skills</a></li>
-                        <li><a href="index.html#projects">Projects</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Elsewhere</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://www.linkedin.com/in/ramirezju17/">LinkedIn</a></li>
-                        <li><a href="https://github.com/jsayram">GitHub</a></li>
-                        <li><a href="https://joseramirezvilla.wordpress.com/">Blog</a></li>
-                        <li><a href="mailto:jsayram3@gmail.com">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>Created &amp; designed by Jose Uriel Ramirez&#8209;Villa © 2017–<span data-year>2026</span> · All rights reserved</span>
-                <a href="#main">Back to top ↑</a>
-            </div>
+            </section>
         </div>
     </footer>
-
-    <script src="js/site.js"></script>
+    <section id="belowFooter">
+        <p class="footer-company-name">Created&nbsp;&amp;&nbsp;Designed by Jose&nbsp;Uriel&nbsp;Ramirez&#8209;Villa &copy;&nbsp;2017&nbsp;&#8226;&nbsp;All&nbsp;rights&nbsp;reserved</p>
+    </section>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script_projects.js"></script>
 </body>
 
 </html>
